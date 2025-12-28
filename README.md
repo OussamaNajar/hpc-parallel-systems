@@ -10,10 +10,10 @@ Parallel implementations of Conway’s Game of Life to study distributed-memory 
 
 - Serial baseline for correctness and reference timing
 - MPI row/column domain decomposition with halo exchange
-- Large-scale variants (`mega` / `tera`) to stress communication and scaling limits
+- Large-scale variants (`mpi_mega` / `mpi_tera`) to stress communication and scaling limits
 - Microbenchmarks for latency and computation time separation
 - SLURM batch runner for cluster execution
 
 **Code:** `am250_game_of_life/`  
-**Build:** `make -f am250_game_of_life/scripts/Makefile all`  
-**Run (example):** `mpirun -np 4 ./am250_game_of_life/bin/row`
+**Build:** `cd am250_game_of_life && make -f scripts/Makefile all` 
+**Run (example):** `cd am250_game_of_life && mpirun -np 4 ./bin/row`
