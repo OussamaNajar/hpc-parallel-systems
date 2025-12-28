@@ -14,6 +14,6 @@ Parallel implementations of Conway’s Game of Life to study distributed-memory 
 - Microbenchmarks for latency and computation time separation
 - SLURM batch runner for cluster execution
 
-**Code:** `am250_game_of_life/`
-**Build:** `cd am250_game_of_life && make -f scripts/Makefile all`
-**Run (example):** `cd am250_game_of_life && mpirun -np 4 ./bin/row`
+**Code:** `am250_game_of_life/`  
+**Build:** `cd am250_game_of_life && make -f scripts/Makefile all`  
+**Run:** `cd am250_game_of_life && mpirun -np 4 ./bin/row`
