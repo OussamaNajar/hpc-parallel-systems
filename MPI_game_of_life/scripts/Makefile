@@ -1,4 +1,4 @@
-# Makefile - AM250 Game of Life (Fortran + MPI)
+# Makefile - MPI Game of Life (Fortran + MPI)
 
 MPIFC = mpif90
 FC    = gfortran
@@ -8,7 +8,7 @@ FFLAGS = -O2 -Wall -Wextra
 BIN_DIR = bin
 SRC_DIR = src
 
-TARGETS = serial column row mpi_mega mpi_tera latency computation_time
+TARGETS = serial column row mpi_block mpi_2d latency computation_time
 
 all: $(BIN_DIR) $(TARGETS:%=$(BIN_DIR)/%)
 
@@ -27,10 +27,10 @@ $(BIN_DIR)/column: $(SRC_DIR)/column.f90
 $(BIN_DIR)/row: $(SRC_DIR)/row.f90
 	$(MPIFC) $(FFLAGS) -o $@ $<
 
-$(BIN_DIR)/mpi_mega: $(SRC_DIR)/mpi_mega.f90
+$(BIN_DIR)/mpi_block: $(SRC_DIR)/mpi_block.f90
 	$(MPIFC) $(FFLAGS) -o $@ $<
 
-$(BIN_DIR)/mpi_tera: $(SRC_DIR)/mpi_tera.f90
+$(BIN_DIR)/mpi_2d: $(SRC_DIR)/mpi_2d.f90
 	$(MPIFC) $(FFLAGS) -o $@ $<
 
 $(BIN_DIR)/latency: $(SRC_DIR)/latency.f90
