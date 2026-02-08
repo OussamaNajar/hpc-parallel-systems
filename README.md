@@ -17,7 +17,7 @@ data movement, and communication patterns constrain performance at scale.
 - Serial baseline for correctness validation and reference timing
 - Row-wise domain decomposition (contiguous row blocks)
 - Column-wise domain decomposition (contiguous column blocks)
-- 2D block decomposition for larger-scale communication stress testing
+- 2D block decomposition to stress communication and synchronization overheads
 - Performance instrumentation (latency measurement, computation timing)
 
 **Execution Environment:**

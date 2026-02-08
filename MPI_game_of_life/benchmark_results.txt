@@ -1,3 +1,16 @@
+============================================
+MPI Game of Life Benchmark Suite
+============================================
+
+Machine Specs:
+==============
+Apple M3
+Cores: 8
+RAM: 24 GB
+ProductName:		macOS
+ProductVersion:		14.5
+BuildVersion:		23F79
+
 === SERIAL BASELINE ===
 Run 1:
 ==========================================
@@ -5,33 +18,36 @@ Serial GoL: 2048x2048, Steps: 300
 ==========================================
 
 ========================================
-TOTAL_TIME_SEC:     9.163894
+TOTAL_TIME_SEC:    15.983607
 ALIVE_FINAL:    5
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 ========================================
+
 Run 2:
 ==========================================
 Serial GoL: 2048x2048, Steps: 300
 ==========================================
 
 ========================================
-TOTAL_TIME_SEC:     9.179566
+TOTAL_TIME_SEC:    17.298789
 ALIVE_FINAL:    5
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 ========================================
+
 Run 3:
 ==========================================
 Serial GoL: 2048x2048, Steps: 300
 ==========================================
 
 ========================================
-TOTAL_TIME_SEC:     9.175371
+TOTAL_TIME_SEC:    16.426348
 ALIVE_FINAL:    5
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 ========================================
+
 === ROW np=2 ===
 Run 1:
 ==========================================
@@ -41,14 +57,15 @@ MPI Ranks: 2
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     3.952773
-COMM_TIME_SEC:      0.049740
-COMP_TIME_SEC:      3.903033
-COMM_FRACTION:      1.26%
+TOTAL_TIME_SEC:     6.396748
+COMM_TIME_SEC:      0.099244
+COMP_TIME_SEC:      6.297504
+COMM_FRACTION:      1.55%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      2
 ========================================
+
 Run 2:
 ==========================================
 Row Decomposition: 2048x2048, Steps: 300
@@ -57,14 +74,15 @@ MPI Ranks: 2
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     3.723089
-COMM_TIME_SEC:      0.059293
-COMP_TIME_SEC:      3.663796
-COMM_FRACTION:      1.59%
+TOTAL_TIME_SEC:     6.355775
+COMM_TIME_SEC:      0.091036
+COMP_TIME_SEC:      6.264739
+COMM_FRACTION:      1.43%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      2
 ========================================
+
 Run 3:
 ==========================================
 Row Decomposition: 2048x2048, Steps: 300
@@ -73,14 +91,15 @@ MPI Ranks: 2
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     3.942092
-COMM_TIME_SEC:      0.082636
-COMP_TIME_SEC:      3.859456
-COMM_FRACTION:      2.10%
+TOTAL_TIME_SEC:     6.379063
+COMM_TIME_SEC:      0.051958
+COMP_TIME_SEC:      6.327105
+COMM_FRACTION:      0.81%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      2
 ========================================
+
 === ROW np=4 ===
 Run 1:
 ==========================================
@@ -90,14 +109,15 @@ MPI Ranks: 4
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.462054
-COMM_TIME_SEC:      0.203101
-COMP_TIME_SEC:      2.258953
-COMM_FRACTION:      8.25%
+TOTAL_TIME_SEC:     6.760197
+COMM_TIME_SEC:      0.780385
+COMP_TIME_SEC:      5.979812
+COMM_FRACTION:     11.54%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      4
 ========================================
+
 Run 2:
 ==========================================
 Row Decomposition: 2048x2048, Steps: 300
@@ -106,14 +126,15 @@ MPI Ranks: 4
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.417170
-COMM_TIME_SEC:      0.150814
-COMP_TIME_SEC:      2.266356
-COMM_FRACTION:      6.24%
+TOTAL_TIME_SEC:     4.615441
+COMM_TIME_SEC:      0.189819
+COMP_TIME_SEC:      4.425622
+COMM_FRACTION:      4.11%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      4
 ========================================
+
 Run 3:
 ==========================================
 Row Decomposition: 2048x2048, Steps: 300
@@ -122,14 +143,15 @@ MPI Ranks: 4
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.415627
-COMM_TIME_SEC:      0.222060
-COMP_TIME_SEC:      2.193567
-COMM_FRACTION:      9.19%
+TOTAL_TIME_SEC:     6.638213
+COMM_TIME_SEC:      0.723083
+COMP_TIME_SEC:      5.915130
+COMM_FRACTION:     10.89%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      4
 ========================================
+
 === ROW np=8 ===
 Run 1:
 ==========================================
@@ -139,14 +161,15 @@ MPI Ranks: 8
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.548863
-COMM_TIME_SEC:      1.069497
-COMP_TIME_SEC:      1.479366
-COMM_FRACTION:     41.96%
+TOTAL_TIME_SEC:     6.145453
+COMM_TIME_SEC:      2.924507
+COMP_TIME_SEC:      3.220946
+COMM_FRACTION:     47.59%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      8
 ========================================
+
 Run 2:
 ==========================================
 Row Decomposition: 2048x2048, Steps: 300
@@ -155,14 +178,15 @@ MPI Ranks: 8
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.421531
-COMM_TIME_SEC:      0.997922
-COMP_TIME_SEC:      1.423609
-COMM_FRACTION:     41.21%
+TOTAL_TIME_SEC:     7.764083
+COMM_TIME_SEC:      3.978096
+COMP_TIME_SEC:      3.785987
+COMM_FRACTION:     51.24%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      8
 ========================================
+
 Run 3:
 ==========================================
 Row Decomposition: 2048x2048, Steps: 300
@@ -171,14 +195,15 @@ MPI Ranks: 8
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.471903
-COMM_TIME_SEC:      1.077968
-COMP_TIME_SEC:      1.393935
-COMM_FRACTION:     43.61%
+TOTAL_TIME_SEC:     5.959507
+COMM_TIME_SEC:      2.964653
+COMP_TIME_SEC:      2.994854
+COMM_FRACTION:     49.75%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      8
 ========================================
+
 === COLUMN np=2 ===
 Run 1:
 ==========================================
@@ -188,14 +213,15 @@ MPI Ranks: 2
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     3.344002
-COMM_TIME_SEC:      0.021871
-COMP_TIME_SEC:      3.322131
-COMM_FRACTION:      0.65%
+TOTAL_TIME_SEC:     5.781433
+COMM_TIME_SEC:      0.033688
+COMP_TIME_SEC:      5.747745
+COMM_FRACTION:      0.58%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      2
 ========================================
+
 Run 2:
 ==========================================
 Column Decomposition: 2048x2048, Steps: 300
@@ -204,14 +230,15 @@ MPI Ranks: 2
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     3.414986
-COMM_TIME_SEC:      0.035539
-COMP_TIME_SEC:      3.379447
-COMM_FRACTION:      1.04%
+TOTAL_TIME_SEC:     5.662768
+COMM_TIME_SEC:      0.040777
+COMP_TIME_SEC:      5.621991
+COMM_FRACTION:      0.72%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      2
 ========================================
+
 Run 3:
 ==========================================
 Column Decomposition: 2048x2048, Steps: 300
@@ -220,14 +247,15 @@ MPI Ranks: 2
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     3.349475
-COMM_TIME_SEC:      0.028486
-COMP_TIME_SEC:      3.320989
-COMM_FRACTION:      0.85%
+TOTAL_TIME_SEC:     5.709749
+COMM_TIME_SEC:      0.029960
+COMP_TIME_SEC:      5.679789
+COMM_FRACTION:      0.52%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      2
 ========================================
+
 === COLUMN np=4 ===
 Run 1:
 ==========================================
@@ -237,14 +265,15 @@ MPI Ranks: 4
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.410988
-COMM_TIME_SEC:      0.217829
-COMP_TIME_SEC:      2.193159
-COMM_FRACTION:      9.03%
+TOTAL_TIME_SEC:     5.816577
+COMM_TIME_SEC:      1.172882
+COMP_TIME_SEC:      4.643695
+COMM_FRACTION:     20.16%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      4
 ========================================
+
 Run 2:
 ==========================================
 Column Decomposition: 2048x2048, Steps: 300
@@ -253,14 +282,15 @@ MPI Ranks: 4
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.408730
-COMM_TIME_SEC:      0.154857
-COMP_TIME_SEC:      2.253873
-COMM_FRACTION:      6.43%
+TOTAL_TIME_SEC:     4.248721
+COMM_TIME_SEC:      0.161750
+COMP_TIME_SEC:      4.086971
+COMM_FRACTION:      3.81%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      4
 ========================================
+
 Run 3:
 ==========================================
 Column Decomposition: 2048x2048, Steps: 300
@@ -269,14 +299,15 @@ MPI Ranks: 4
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.316745
-COMM_TIME_SEC:      0.190040
-COMP_TIME_SEC:      2.126705
-COMM_FRACTION:      8.20%
+TOTAL_TIME_SEC:     4.215739
+COMM_TIME_SEC:      0.226553
+COMP_TIME_SEC:      3.989186
+COMM_FRACTION:      5.37%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      4
 ========================================
+
 === COLUMN np=8 ===
 Run 1:
 ==========================================
@@ -286,14 +317,15 @@ MPI Ranks: 8
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.100381
-COMM_TIME_SEC:      0.849126
-COMP_TIME_SEC:      1.251255
-COMM_FRACTION:     40.43%
+TOTAL_TIME_SEC:     3.863421
+COMM_TIME_SEC:      1.533003
+COMP_TIME_SEC:      2.330418
+COMM_FRACTION:     39.68%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      8
 ========================================
+
 Run 2:
 ==========================================
 Column Decomposition: 2048x2048, Steps: 300
@@ -302,14 +334,15 @@ MPI Ranks: 8
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.167076
-COMM_TIME_SEC:      0.917937
-COMP_TIME_SEC:      1.249139
-COMM_FRACTION:     42.36%
+TOTAL_TIME_SEC:     5.187737
+COMM_TIME_SEC:      2.279879
+COMP_TIME_SEC:      2.907858
+COMM_FRACTION:     43.95%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      8
 ========================================
+
 Run 3:
 ==========================================
 Column Decomposition: 2048x2048, Steps: 300
@@ -318,17 +351,171 @@ MPI Ranks: 8
 ALIVE_FINAL:    5
 
 ========================================
-TOTAL_TIME_SEC:     2.226429
-COMM_TIME_SEC:      0.921033
-COMP_TIME_SEC:      1.305396
-COMM_FRACTION:     41.37%
+TOTAL_TIME_SEC:     5.018676
+COMM_TIME_SEC:      2.430546
+COMP_TIME_SEC:      2.588130
+COMM_FRACTION:     48.43%
 GRID_SIZE:      4194304
 TIMESTEPS:      300
 MPI_RANKS:      8
 ========================================
 
-✅ Benchmarks complete! Results in benchmark_results.txt
-      300
-MPI_RANKS:      8
-========================================
 
+============================================
+MICROBENCHMARKS FOR PERFORMANCE MODELING
+============================================
+
+=== COMPUTATION TIME MICROBENCHMARK ===
+ ==========================================
+ Computation Time Microbenchmark
+ Game of Life t_c Estimation
+ ==========================================
+ 
+ Original nyxarray:
+01010000000
+10100000001
+00011011001
+00010001000
+00000000000
+01010001010
+00100100100
+10010001000
+10000100101
+00000001010
+ Updated output_array:
+11100000001
+11101000001
+10111011001
+00011011000
+00100000100
+00100000100
+01111011100
+11001011111
+10000011111
+10000000111
+ 
+ Timing Computation Performance...
+ ================================
+Grid size: 20 x 20
+Iterations: 10000
+ 
+ Timing Results:
+ ===============
+Total time:   0.0660 seconds
+Total cell updates: 0.400000E+07
+t_c (per-cell update time): 0.165100E-07 seconds
+t_c (per-operation, model): 0.165100E-08 seconds
+ 
+ NOTE: 'per-operation' uses modeling assumption of ~10 ops/cell
+       For performance model, use per-cell time directly
+ 
+ Results written to computation_results.txt
+ 
+ Update performance model with:
+double precision, parameter :: t_c = 0.165100E-07
+ 
+ Sample Random Input (first 5x10):
+0101011011
+1100010000
+0011110110
+1011110011
+1101111000
+ Sample Random Output (first 5x10):
+0001010111
+0100000000
+0000000110
+1000000010
+0000000100
+
+--- Computation Results Detail ---
+==========================================
+Computation Time Microbenchmark Results
+Game of Life t_c Estimation
+==========================================
+
+Grid size: 20 x 20
+Iterations: 10000
+Total time:   0.0660 seconds
+
+t_c (per-cell update): 0.165100E-07 seconds
+t_c (per-op, model):   0.165100E-08 seconds
+
+Use in performance model:
+parameter :: t_c = 0.165100E-07
+
+=== MPI LATENCY MICROBENCHMARK ===
+ ==========================================
+ MPI Latency Measurement
+ Game of Life Performance Model
+ ==========================================
+ 
+ 
+ ==========================================
+ Results written to latency_results.txt
+ ==========================================
+ 
+ Estimated Performance Parameters:
+ ==================================
+t_s (startup latency):  0.641000E-06 seconds
+t_w (transfer time):    0.359622E-10 seconds/byte
+ 
+ Update performance model with:
+double precision, parameter :: t_s = 0.641000E-06
+double precision, parameter :: t_w = 0.359622E-10
+ 
+
+--- Latency Results Detail ---
+==========================================
+MPI Latency Microbenchmark Results
+Game of Life Performance Model Parameters
+==========================================
+
+Size(Bytes)  Count(ints)  AvgTime(s)  Bandwidth(GB/s)  t_s_est  t_w_est
+----------------------------------------------------------------------
+           4           1  0.641000E-06      0.0125  0.641000E-06  0.000000E+00
+           8           2  0.149000E-06      0.1074  0.641000E-06  0.000000E+00
+          16           4  0.152000E-06      0.2105  0.641000E-06  0.000000E+00
+          32           8  0.151000E-06      0.4238  0.641000E-06  0.000000E+00
+          64          16  0.160000E-06      0.8000  0.641000E-06  0.000000E+00
+         128          32  0.166000E-06      1.5422  0.641000E-06  0.000000E+00
+         256          64  0.189500E-06      2.7018  0.641000E-06  0.000000E+00
+         512         128  0.433000E-06      2.3649  0.641000E-06  0.000000E+00
+        1024         256  0.372500E-06      5.4980  0.641000E-06  0.363770E-09
+        2048         512  0.522000E-06      7.8467  0.641000E-06  0.254883E-09
+        4096        1024  0.103800E-05      7.8921  0.641000E-06  0.253418E-09
+        8192        2048  0.147150E-05     11.1342  0.641000E-06  0.179626E-09
+       16384        4096  0.184300E-05     17.7797  0.641000E-06  0.112488E-09
+       32768        8192  0.273550E-05     23.9576  0.641000E-06  0.834808E-10
+       65536       16384  0.479450E-05     27.3380  0.641000E-06  0.731583E-10
+      131072       32768  0.917800E-05     28.5622  0.641000E-06  0.700226E-10
+      262144       65536  0.115360E-04     45.4480  0.641000E-06  0.440063E-10
+      524288      131072  0.197050E-04     53.2137  0.641000E-06  0.375843E-10
+     1048576      262144  0.389660E-04     53.8200  0.641000E-06  0.371609E-10
+     2097152      524288  0.758200E-04     55.3192  0.641000E-06  0.361538E-10
+     4194304     1048576  0.150836E-03     55.6139  0.641000E-06  0.359622E-10
+
+==========================================
+Estimated Performance Model Parameters
+==========================================
+t_s (startup latency):  0.641000E-06 seconds
+t_w (per-byte transfer):0.359622E-10 seconds/byte
+
+Use these in performance model:
+parameter :: t_s = 0.641000E-06
+parameter :: t_w = 0.359622E-10
+
+
+============================================
+✅ ALL BENCHMARKS COMPLETE
+============================================
+
+Results saved in:
+  - benchmark_results.txt (main output)
+  - latency_results.txt (microbench detail)
+  - computation_results.txt (microbench detail)
+
+Use these files to:
+  1. Validate scaling results
+  2. Extract t_s, t_w, t_c for performance model
+  3. Demonstrate complete benchmarking methodology
+============================================
