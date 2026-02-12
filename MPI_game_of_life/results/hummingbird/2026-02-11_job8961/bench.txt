@@ -1,0 +1,2201 @@
+============================================
+MPI Game of Life Benchmark Suite
+============================================
+run_id=2026-02-11_job8961
+platform=hummingbird
+date_is=2026-02-11T14:18:52-08:00
+mode=full
+grid=2048x2048 steps=300 reps=3
+launcher=mpirun
+BIND_FLAGS=--bind-to core --map-by core --report-bindings
+NP_LIST=1 2 4 8 16 32
+============================================
+
+=== SERIAL BASELINE ===
+-- run 1/3 --
+==========================================
+Serial GoL: 2048x2048, Steps: 300
+==========================================
+
+========================================
+TOTAL_TIME_SEC:    11.997069
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+========================================
+
+-- run 2/3 --
+==========================================
+Serial GoL: 2048x2048, Steps: 300
+==========================================
+
+========================================
+TOTAL_TIME_SEC:    12.179754
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+========================================
+
+-- run 3/3 --
+==========================================
+Serial GoL: 2048x2048, Steps: 300
+==========================================
+
+========================================
+TOTAL_TIME_SEC:    12.272850
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+========================================
+
+=== MPI ROW np=1 ===
+-- run 1/3 --
+[node-06:1521401] Rank 0 bound to package[0][core:0]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    13.684467
+COMM_TIME_SEC:      0.003323
+COMP_TIME_SEC:     13.681143
+COMM_FRACTION:      0.02%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+[node-06:1521420] Rank 0 bound to package[0][core:0]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    13.731647
+COMM_TIME_SEC:      0.003362
+COMP_TIME_SEC:     13.728285
+COMM_FRACTION:      0.02%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+[node-06:1521438] Rank 0 bound to package[0][core:0]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    13.824737
+COMM_TIME_SEC:      0.003417
+COMP_TIME_SEC:     13.821320
+COMM_FRACTION:      0.02%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI COLUMN np=1 ===
+-- run 1/3 --
+[node-06:1521527] Rank 0 bound to package[0][core:0]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.074446
+COMM_TIME_SEC:      0.000434
+COMP_TIME_SEC:     12.074012
+COMM_FRACTION:      0.00%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+[node-06:1521550] Rank 0 bound to package[0][core:0]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.073063
+COMM_TIME_SEC:      0.000361
+COMP_TIME_SEC:     12.072701
+COMM_FRACTION:      0.00%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+[node-06:1521570] Rank 0 bound to package[0][core:0]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.085558
+COMM_TIME_SEC:      0.000373
+COMP_TIME_SEC:     12.085185
+COMM_FRACTION:      0.00%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI MPI_BLOCK np=1 ===
+-- run 1/3 --
+[node-06:1521591] Rank 0 bound to package[0][core:0]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.167115
+COMM_TIME_SEC:      0.003409
+COMP_TIME_SEC:     12.163706
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+[node-06:1521672] Rank 0 bound to package[0][core:0]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.121832
+COMM_TIME_SEC:      0.003419
+COMP_TIME_SEC:     12.118413
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+[node-06:1521697] Rank 0 bound to package[0][core:0]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.057820
+COMM_TIME_SEC:      0.003333
+COMP_TIME_SEC:     12.054487
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI MPI_2D np=1 ===
+-- run 1/3 --
+[node-06:1521719] Rank 0 bound to package[0][core:0]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.092946
+COMM_TIME_SEC:      0.003464
+COMP_TIME_SEC:     12.089482
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+[node-06:1521737] Rank 0 bound to package[0][core:0]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.147909
+COMM_TIME_SEC:      0.003403
+COMP_TIME_SEC:     12.144507
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+[node-06:1521819] Rank 0 bound to package[0][core:0]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.198870
+COMM_TIME_SEC:      0.003244
+COMP_TIME_SEC:     12.195626
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI ROW np=2 ===
+-- run 1/3 --
+[node-06:1521846] Rank 0 bound to package[0][core:0]
+[node-06:1521846] Rank 1 bound to package[0][core:1]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     7.019742
+COMM_TIME_SEC:      0.040980
+COMP_TIME_SEC:      6.978762
+COMM_FRACTION:      0.58%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 2/3 --
+[node-06:1521868] Rank 0 bound to package[0][core:0]
+[node-06:1521868] Rank 1 bound to package[0][core:1]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     7.065678
+COMM_TIME_SEC:      0.037599
+COMP_TIME_SEC:      7.028079
+COMM_FRACTION:      0.53%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 3/3 --
+[node-06:1521889] Rank 0 bound to package[0][core:0]
+[node-06:1521889] Rank 1 bound to package[0][core:1]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     7.052678
+COMM_TIME_SEC:      0.090691
+COMP_TIME_SEC:      6.961987
+COMM_FRACTION:      1.29%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+=== MPI COLUMN np=2 ===
+-- run 1/3 --
+[node-06:1521913] Rank 0 bound to package[0][core:0]
+[node-06:1521913] Rank 1 bound to package[0][core:1]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     4.713119
+COMM_TIME_SEC:      0.053269
+COMP_TIME_SEC:      4.659851
+COMM_FRACTION:      1.13%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 2/3 --
+[node-06:1521934] Rank 0 bound to package[0][core:0]
+[node-06:1521934] Rank 1 bound to package[0][core:1]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     4.677683
+COMM_TIME_SEC:      0.261184
+COMP_TIME_SEC:      4.416499
+COMM_FRACTION:      5.58%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 3/3 --
+[node-06:1521955] Rank 0 bound to package[0][core:0]
+[node-06:1521955] Rank 1 bound to package[0][core:1]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     4.812929
+COMM_TIME_SEC:      0.044794
+COMP_TIME_SEC:      4.768134
+COMM_FRACTION:      0.93%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+=== MPI MPI_BLOCK np=2 ===
+-- run 1/3 --
+[node-06:1522042] Rank 0 bound to package[0][core:0]
+[node-06:1522042] Rank 1 bound to package[0][core:1]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.547517
+COMM_TIME_SEC:      0.023470
+COMP_TIME_SEC:      6.524048
+COMM_FRACTION:      0.36%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 2/3 --
+[node-06:1522064] Rank 0 bound to package[0][core:0]
+[node-06:1522064] Rank 1 bound to package[0][core:1]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.542416
+COMM_TIME_SEC:      0.010522
+COMP_TIME_SEC:      6.531895
+COMM_FRACTION:      0.16%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 3/3 --
+[node-06:1522090] Rank 0 bound to package[0][core:0]
+[node-06:1522090] Rank 1 bound to package[0][core:1]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.568789
+COMM_TIME_SEC:      0.032413
+COMP_TIME_SEC:      6.536376
+COMM_FRACTION:      0.49%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+=== MPI MPI_2D np=2 ===
+-- run 1/3 --
+[node-06:1522115] Rank 0 bound to package[0][core:0]
+[node-06:1522115] Rank 1 bound to package[0][core:1]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.565855
+COMM_TIME_SEC:      0.020114
+COMP_TIME_SEC:      6.545741
+COMM_FRACTION:      0.31%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 2/3 --
+[node-06:1522146] Rank 0 bound to package[0][core:0]
+[node-06:1522146] Rank 1 bound to package[0][core:1]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.550991
+COMM_TIME_SEC:      0.010091
+COMP_TIME_SEC:      6.540900
+COMM_FRACTION:      0.15%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 3/3 --
+[node-06:1522167] Rank 0 bound to package[0][core:0]
+[node-06:1522167] Rank 1 bound to package[0][core:1]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.528317
+COMM_TIME_SEC:      0.032862
+COMP_TIME_SEC:      6.495454
+COMM_FRACTION:      0.50%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+=== MPI ROW np=4 ===
+-- run 1/3 --
+[node-06:1522191] Rank 0 bound to package[0][core:0]
+[node-06:1522191] Rank 1 bound to package[0][core:1]
+[node-06:1522191] Rank 2 bound to package[0][core:2]
+[node-06:1522191] Rank 3 bound to package[0][core:3]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     3.910681
+COMM_TIME_SEC:      0.071162
+COMP_TIME_SEC:      3.839520
+COMM_FRACTION:      1.82%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 2/3 --
+[node-06:1522218] Rank 0 bound to package[0][core:0]
+[node-06:1522218] Rank 1 bound to package[0][core:1]
+[node-06:1522218] Rank 2 bound to package[0][core:2]
+[node-06:1522218] Rank 3 bound to package[0][core:3]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     3.917684
+COMM_TIME_SEC:      0.071418
+COMP_TIME_SEC:      3.846266
+COMM_FRACTION:      1.82%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 3/3 --
+[node-06:1522308] Rank 0 bound to package[0][core:0]
+[node-06:1522308] Rank 1 bound to package[0][core:1]
+[node-06:1522308] Rank 2 bound to package[0][core:2]
+[node-06:1522308] Rank 3 bound to package[0][core:3]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     3.908188
+COMM_TIME_SEC:      0.066528
+COMP_TIME_SEC:      3.841660
+COMM_FRACTION:      1.70%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+=== MPI COLUMN np=4 ===
+-- run 1/3 --
+[node-06:1522340] Rank 0 bound to package[0][core:0]
+[node-06:1522340] Rank 1 bound to package[0][core:1]
+[node-06:1522340] Rank 2 bound to package[0][core:2]
+[node-06:1522340] Rank 3 bound to package[0][core:3]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.548563
+COMM_TIME_SEC:      0.040556
+COMP_TIME_SEC:      2.508007
+COMM_FRACTION:      1.59%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 2/3 --
+[node-06:1522372] Rank 0 bound to package[0][core:0]
+[node-06:1522372] Rank 1 bound to package[0][core:1]
+[node-06:1522372] Rank 2 bound to package[0][core:2]
+[node-06:1522372] Rank 3 bound to package[0][core:3]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.504713
+COMM_TIME_SEC:      0.071111
+COMP_TIME_SEC:      2.433602
+COMM_FRACTION:      2.84%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 3/3 --
+[node-06:1522399] Rank 0 bound to package[0][core:0]
+[node-06:1522399] Rank 1 bound to package[0][core:1]
+[node-06:1522399] Rank 2 bound to package[0][core:2]
+[node-06:1522399] Rank 3 bound to package[0][core:3]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.519999
+COMM_TIME_SEC:      0.073075
+COMP_TIME_SEC:      2.446924
+COMM_FRACTION:      2.90%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+=== MPI MPI_BLOCK np=4 ===
+-- run 1/3 --
+[node-06:1522429] Rank 0 bound to package[0][core:0]
+[node-06:1522429] Rank 1 bound to package[0][core:1]
+[node-06:1522429] Rank 2 bound to package[0][core:2]
+[node-06:1522429] Rank 3 bound to package[0][core:3]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.623918
+COMM_TIME_SEC:      0.051435
+COMP_TIME_SEC:      2.572483
+COMM_FRACTION:      1.96%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 2/3 --
+[node-06:1522457] Rank 0 bound to package[0][core:0]
+[node-06:1522457] Rank 1 bound to package[0][core:1]
+[node-06:1522457] Rank 2 bound to package[0][core:2]
+[node-06:1522457] Rank 3 bound to package[0][core:3]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.621488
+COMM_TIME_SEC:      0.015697
+COMP_TIME_SEC:      2.605791
+COMM_FRACTION:      0.60%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 3/3 --
+[node-06:1522484] Rank 0 bound to package[0][core:0]
+[node-06:1522484] Rank 1 bound to package[0][core:1]
+[node-06:1522484] Rank 2 bound to package[0][core:2]
+[node-06:1522484] Rank 3 bound to package[0][core:3]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.644439
+COMM_TIME_SEC:      0.049812
+COMP_TIME_SEC:      2.594627
+COMM_FRACTION:      1.88%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+=== MPI MPI_2D np=4 ===
+-- run 1/3 --
+[node-06:1522514] Rank 0 bound to package[0][core:0]
+[node-06:1522514] Rank 1 bound to package[0][core:1]
+[node-06:1522514] Rank 2 bound to package[0][core:2]
+[node-06:1522514] Rank 3 bound to package[0][core:3]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.596981
+COMM_TIME_SEC:      0.157094
+COMP_TIME_SEC:      2.439887
+COMM_FRACTION:      6.05%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 2/3 --
+[node-06:1522541] Rank 0 bound to package[0][core:0]
+[node-06:1522541] Rank 1 bound to package[0][core:1]
+[node-06:1522541] Rank 2 bound to package[0][core:2]
+[node-06:1522541] Rank 3 bound to package[0][core:3]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.583548
+COMM_TIME_SEC:      0.109531
+COMP_TIME_SEC:      2.474017
+COMM_FRACTION:      4.24%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 3/3 --
+[node-06:1522568] Rank 0 bound to package[0][core:0]
+[node-06:1522568] Rank 1 bound to package[0][core:1]
+[node-06:1522568] Rank 2 bound to package[0][core:2]
+[node-06:1522568] Rank 3 bound to package[0][core:3]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.603179
+COMM_TIME_SEC:      0.013930
+COMP_TIME_SEC:      2.589249
+COMM_FRACTION:      0.54%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+=== MPI ROW np=8 ===
+-- run 1/3 --
+[node-06:1522598] Rank 0 bound to package[0][core:0]
+[node-06:1522598] Rank 1 bound to package[0][core:1]
+[node-06:1522598] Rank 2 bound to package[0][core:2]
+[node-06:1522598] Rank 3 bound to package[0][core:3]
+[node-06:1522598] Rank 4 bound to package[0][core:4]
+[node-06:1522598] Rank 5 bound to package[0][core:5]
+[node-06:1522598] Rank 6 bound to package[0][core:6]
+[node-06:1522598] Rank 7 bound to package[0][core:7]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.029703
+COMM_TIME_SEC:      0.063366
+COMP_TIME_SEC:      1.966337
+COMM_FRACTION:      3.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 2/3 --
+[node-06:1522637] Rank 0 bound to package[0][core:0]
+[node-06:1522637] Rank 1 bound to package[0][core:1]
+[node-06:1522637] Rank 2 bound to package[0][core:2]
+[node-06:1522637] Rank 3 bound to package[0][core:3]
+[node-06:1522637] Rank 4 bound to package[0][core:4]
+[node-06:1522637] Rank 5 bound to package[0][core:5]
+[node-06:1522637] Rank 6 bound to package[0][core:6]
+[node-06:1522637] Rank 7 bound to package[0][core:7]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.020425
+COMM_TIME_SEC:      0.018544
+COMP_TIME_SEC:      2.001881
+COMM_FRACTION:      0.92%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 3/3 --
+[node-06:1522676] Rank 0 bound to package[0][core:0]
+[node-06:1522676] Rank 1 bound to package[0][core:1]
+[node-06:1522676] Rank 2 bound to package[0][core:2]
+[node-06:1522676] Rank 3 bound to package[0][core:3]
+[node-06:1522676] Rank 4 bound to package[0][core:4]
+[node-06:1522676] Rank 5 bound to package[0][core:5]
+[node-06:1522676] Rank 6 bound to package[0][core:6]
+[node-06:1522676] Rank 7 bound to package[0][core:7]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.033202
+COMM_TIME_SEC:      0.020080
+COMP_TIME_SEC:      2.013123
+COMM_FRACTION:      0.99%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+=== MPI COLUMN np=8 ===
+-- run 1/3 --
+[node-06:1522783] Rank 0 bound to package[0][core:0]
+[node-06:1522783] Rank 1 bound to package[0][core:1]
+[node-06:1522783] Rank 2 bound to package[0][core:2]
+[node-06:1522783] Rank 3 bound to package[0][core:3]
+[node-06:1522783] Rank 4 bound to package[0][core:4]
+[node-06:1522783] Rank 5 bound to package[0][core:5]
+[node-06:1522783] Rank 6 bound to package[0][core:6]
+[node-06:1522783] Rank 7 bound to package[0][core:7]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.354471
+COMM_TIME_SEC:      0.042183
+COMP_TIME_SEC:      1.312288
+COMM_FRACTION:      3.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 2/3 --
+[node-06:1522822] Rank 0 bound to package[0][core:0]
+[node-06:1522822] Rank 1 bound to package[0][core:1]
+[node-06:1522822] Rank 2 bound to package[0][core:2]
+[node-06:1522822] Rank 3 bound to package[0][core:3]
+[node-06:1522822] Rank 4 bound to package[0][core:4]
+[node-06:1522822] Rank 5 bound to package[0][core:5]
+[node-06:1522822] Rank 6 bound to package[0][core:6]
+[node-06:1522822] Rank 7 bound to package[0][core:7]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.351047
+COMM_TIME_SEC:      0.045022
+COMP_TIME_SEC:      1.306025
+COMM_FRACTION:      3.33%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 3/3 --
+[node-06:1522861] Rank 0 bound to package[0][core:0]
+[node-06:1522861] Rank 1 bound to package[0][core:1]
+[node-06:1522861] Rank 2 bound to package[0][core:2]
+[node-06:1522861] Rank 3 bound to package[0][core:3]
+[node-06:1522861] Rank 4 bound to package[0][core:4]
+[node-06:1522861] Rank 5 bound to package[0][core:5]
+[node-06:1522861] Rank 6 bound to package[0][core:6]
+[node-06:1522861] Rank 7 bound to package[0][core:7]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.350949
+COMM_TIME_SEC:      0.033077
+COMP_TIME_SEC:      1.317872
+COMM_FRACTION:      2.45%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+=== MPI MPI_BLOCK np=8 ===
+-- run 1/3 --
+[node-06:1522906] Rank 0 bound to package[0][core:0]
+[node-06:1522906] Rank 1 bound to package[0][core:1]
+[node-06:1522906] Rank 2 bound to package[0][core:2]
+[node-06:1522906] Rank 3 bound to package[0][core:3]
+[node-06:1522906] Rank 4 bound to package[0][core:4]
+[node-06:1522906] Rank 5 bound to package[0][core:5]
+[node-06:1522906] Rank 6 bound to package[0][core:6]
+[node-06:1522906] Rank 7 bound to package[0][core:7]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.388162
+COMM_TIME_SEC:      0.025503
+COMP_TIME_SEC:      1.362659
+COMM_FRACTION:      1.84%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 2/3 --
+[node-06:1522950] Rank 0 bound to package[0][core:0]
+[node-06:1522950] Rank 1 bound to package[0][core:1]
+[node-06:1522950] Rank 2 bound to package[0][core:2]
+[node-06:1522950] Rank 3 bound to package[0][core:3]
+[node-06:1522950] Rank 4 bound to package[0][core:4]
+[node-06:1522950] Rank 5 bound to package[0][core:5]
+[node-06:1522950] Rank 6 bound to package[0][core:6]
+[node-06:1522950] Rank 7 bound to package[0][core:7]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.395703
+COMM_TIME_SEC:      0.026534
+COMP_TIME_SEC:      1.369169
+COMM_FRACTION:      1.90%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 3/3 --
+[node-06:1522989] Rank 0 bound to package[0][core:0]
+[node-06:1522989] Rank 1 bound to package[0][core:1]
+[node-06:1522989] Rank 2 bound to package[0][core:2]
+[node-06:1522989] Rank 3 bound to package[0][core:3]
+[node-06:1522989] Rank 4 bound to package[0][core:4]
+[node-06:1522989] Rank 5 bound to package[0][core:5]
+[node-06:1522989] Rank 6 bound to package[0][core:6]
+[node-06:1522989] Rank 7 bound to package[0][core:7]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.406229
+COMM_TIME_SEC:      0.058578
+COMP_TIME_SEC:      1.347650
+COMM_FRACTION:      4.17%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+=== MPI MPI_2D np=8 ===
+-- run 1/3 --
+[node-06:1523033] Rank 0 bound to package[0][core:0]
+[node-06:1523033] Rank 1 bound to package[0][core:1]
+[node-06:1523033] Rank 2 bound to package[0][core:2]
+[node-06:1523033] Rank 3 bound to package[0][core:3]
+[node-06:1523033] Rank 4 bound to package[0][core:4]
+[node-06:1523033] Rank 5 bound to package[0][core:5]
+[node-06:1523033] Rank 6 bound to package[0][core:6]
+[node-06:1523033] Rank 7 bound to package[0][core:7]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.379907
+COMM_TIME_SEC:      0.046546
+COMP_TIME_SEC:      1.333361
+COMM_FRACTION:      3.37%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 2/3 --
+[node-06:1523072] Rank 0 bound to package[0][core:0]
+[node-06:1523072] Rank 1 bound to package[0][core:1]
+[node-06:1523072] Rank 2 bound to package[0][core:2]
+[node-06:1523072] Rank 3 bound to package[0][core:3]
+[node-06:1523072] Rank 4 bound to package[0][core:4]
+[node-06:1523072] Rank 5 bound to package[0][core:5]
+[node-06:1523072] Rank 6 bound to package[0][core:6]
+[node-06:1523072] Rank 7 bound to package[0][core:7]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.388609
+COMM_TIME_SEC:      0.108580
+COMP_TIME_SEC:      1.280029
+COMM_FRACTION:      7.82%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 3/3 --
+[node-06:1523112] Rank 0 bound to package[0][core:0]
+[node-06:1523112] Rank 1 bound to package[0][core:1]
+[node-06:1523112] Rank 2 bound to package[0][core:2]
+[node-06:1523112] Rank 3 bound to package[0][core:3]
+[node-06:1523112] Rank 4 bound to package[0][core:4]
+[node-06:1523112] Rank 5 bound to package[0][core:5]
+[node-06:1523112] Rank 6 bound to package[0][core:6]
+[node-06:1523112] Rank 7 bound to package[0][core:7]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.382662
+COMM_TIME_SEC:      0.049067
+COMP_TIME_SEC:      1.333595
+COMM_FRACTION:      3.55%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+=== MPI ROW np=16 ===
+-- run 1/3 --
+[node-06:1523154] Rank 0 bound to package[0][core:0]
+[node-06:1523154] Rank 1 bound to package[0][core:1]
+[node-06:1523154] Rank 2 bound to package[0][core:2]
+[node-06:1523154] Rank 3 bound to package[0][core:3]
+[node-06:1523154] Rank 4 bound to package[0][core:4]
+[node-06:1523154] Rank 5 bound to package[0][core:5]
+[node-06:1523154] Rank 6 bound to package[0][core:6]
+[node-06:1523154] Rank 7 bound to package[0][core:7]
+[node-18:2072059] Rank 8 bound to package[0][core:0]
+[node-18:2072059] Rank 9 bound to package[0][core:1]
+[node-18:2072059] Rank 10 bound to package[0][core:2]
+[node-18:2072059] Rank 11 bound to package[0][core:3]
+[node-18:2072059] Rank 12 bound to package[0][core:4]
+[node-18:2072059] Rank 13 bound to package[0][core:5]
+[node-18:2072059] Rank 14 bound to package[0][core:6]
+[node-18:2072059] Rank 15 bound to package[0][core:7]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.152584
+COMM_TIME_SEC:      0.102348
+COMP_TIME_SEC:      1.050236
+COMM_FRACTION:      8.88%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 2/3 --
+[node-06:1523193] Rank 0 bound to package[0][core:0]
+[node-06:1523193] Rank 1 bound to package[0][core:1]
+[node-06:1523193] Rank 2 bound to package[0][core:2]
+[node-06:1523193] Rank 3 bound to package[0][core:3]
+[node-06:1523193] Rank 4 bound to package[0][core:4]
+[node-06:1523193] Rank 5 bound to package[0][core:5]
+[node-06:1523193] Rank 6 bound to package[0][core:6]
+[node-06:1523193] Rank 7 bound to package[0][core:7]
+[node-18:2072136] Rank 8 bound to package[0][core:0]
+[node-18:2072136] Rank 10 bound to package[0][core:2]
+[node-18:2072136] Rank 9 bound to package[0][core:1]
+[node-18:2072136] Rank 11 bound to package[0][core:3]
+[node-18:2072136] Rank 13 bound to package[0][core:5]
+[node-18:2072136] Rank 14 bound to package[0][core:6]
+[node-18:2072136] Rank 12 bound to package[0][core:4]
+[node-18:2072136] Rank 15 bound to package[0][core:7]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.145087
+COMM_TIME_SEC:      0.089855
+COMP_TIME_SEC:      1.055231
+COMM_FRACTION:      7.85%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 3/3 --
+[node-06:1523232] Rank 0 bound to package[0][core:0]
+[node-06:1523232] Rank 1 bound to package[0][core:1]
+[node-06:1523232] Rank 2 bound to package[0][core:2]
+[node-06:1523232] Rank 3 bound to package[0][core:3]
+[node-06:1523232] Rank 4 bound to package[0][core:4]
+[node-06:1523232] Rank 5 bound to package[0][core:5]
+[node-06:1523232] Rank 6 bound to package[0][core:6]
+[node-06:1523232] Rank 7 bound to package[0][core:7]
+[node-18:2072199] Rank 8 bound to package[0][core:0]
+[node-18:2072199] Rank 9 bound to package[0][core:1]
+[node-18:2072199] Rank 10 bound to package[0][core:2]
+[node-18:2072199] Rank 11 bound to package[0][core:3]
+[node-18:2072199] Rank 12 bound to package[0][core:4]
+[node-18:2072199] Rank 13 bound to package[0][core:5]
+[node-18:2072199] Rank 14 bound to package[0][core:6]
+[node-18:2072199] Rank 15 bound to package[0][core:7]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.147111
+COMM_TIME_SEC:      0.096092
+COMP_TIME_SEC:      1.051019
+COMM_FRACTION:      8.38%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+=== MPI COLUMN np=16 ===
+-- run 1/3 --
+[node-06:1523274] Rank 0 bound to package[0][core:0]
+[node-06:1523274] Rank 1 bound to package[0][core:1]
+[node-06:1523274] Rank 2 bound to package[0][core:2]
+[node-06:1523274] Rank 3 bound to package[0][core:3]
+[node-06:1523274] Rank 4 bound to package[0][core:4]
+[node-06:1523274] Rank 5 bound to package[0][core:5]
+[node-06:1523274] Rank 6 bound to package[0][core:6]
+[node-06:1523274] Rank 7 bound to package[0][core:7]
+[node-18:2072261] Rank 9 bound to package[0][core:1]
+[node-18:2072261] Rank 10 bound to package[0][core:2]
+[node-18:2072261] Rank 8 bound to package[0][core:0]
+[node-18:2072261] Rank 11 bound to package[0][core:3]
+[node-18:2072261] Rank 12 bound to package[0][core:4]
+[node-18:2072261] Rank 13 bound to package[0][core:5]
+[node-18:2072261] Rank 14 bound to package[0][core:6]
+[node-18:2072261] Rank 15 bound to package[0][core:7]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.667242
+COMM_TIME_SEC:      0.056052
+COMP_TIME_SEC:      0.611190
+COMM_FRACTION:      8.40%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 2/3 --
+[node-06:1523313] Rank 0 bound to package[0][core:0]
+[node-06:1523313] Rank 1 bound to package[0][core:1]
+[node-06:1523313] Rank 2 bound to package[0][core:2]
+[node-06:1523313] Rank 3 bound to package[0][core:3]
+[node-06:1523313] Rank 4 bound to package[0][core:4]
+[node-06:1523313] Rank 5 bound to package[0][core:5]
+[node-06:1523313] Rank 6 bound to package[0][core:6]
+[node-06:1523313] Rank 7 bound to package[0][core:7]
+[node-18:2072324] Rank 8 bound to package[0][core:0]
+[node-18:2072324] Rank 9 bound to package[0][core:1]
+[node-18:2072324] Rank 10 bound to package[0][core:2]
+[node-18:2072324] Rank 11 bound to package[0][core:3]
+[node-18:2072324] Rank 12 bound to package[0][core:4]
+[node-18:2072324] Rank 13 bound to package[0][core:5]
+[node-18:2072324] Rank 14 bound to package[0][core:6]
+[node-18:2072324] Rank 15 bound to package[0][core:7]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.667450
+COMM_TIME_SEC:      0.060609
+COMP_TIME_SEC:      0.606841
+COMM_FRACTION:      9.08%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 3/3 --
+[node-06:1523352] Rank 0 bound to package[0][core:0]
+[node-06:1523352] Rank 1 bound to package[0][core:1]
+[node-06:1523352] Rank 2 bound to package[0][core:2]
+[node-06:1523352] Rank 3 bound to package[0][core:3]
+[node-06:1523352] Rank 4 bound to package[0][core:4]
+[node-06:1523352] Rank 5 bound to package[0][core:5]
+[node-06:1523352] Rank 6 bound to package[0][core:6]
+[node-06:1523352] Rank 7 bound to package[0][core:7]
+[node-18:2072386] Rank 8 bound to package[0][core:0]
+[node-18:2072386] Rank 9 bound to package[0][core:1]
+[node-18:2072386] Rank 10 bound to package[0][core:2]
+[node-18:2072386] Rank 11 bound to package[0][core:3]
+[node-18:2072386] Rank 12 bound to package[0][core:4]
+[node-18:2072386] Rank 13 bound to package[0][core:5]
+[node-18:2072386] Rank 15 bound to package[0][core:7]
+[node-18:2072386] Rank 14 bound to package[0][core:6]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.667344
+COMM_TIME_SEC:      0.061802
+COMP_TIME_SEC:      0.605541
+COMM_FRACTION:      9.26%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+=== MPI MPI_BLOCK np=16 ===
+-- run 1/3 --
+[node-06:1523394] Rank 0 bound to package[0][core:0]
+[node-06:1523394] Rank 1 bound to package[0][core:1]
+[node-06:1523394] Rank 2 bound to package[0][core:2]
+[node-06:1523394] Rank 3 bound to package[0][core:3]
+[node-06:1523394] Rank 4 bound to package[0][core:4]
+[node-06:1523394] Rank 5 bound to package[0][core:5]
+[node-06:1523394] Rank 6 bound to package[0][core:6]
+[node-06:1523394] Rank 7 bound to package[0][core:7]
+[node-18:2072448] Rank 8 bound to package[0][core:0]
+[node-18:2072448] Rank 10 bound to package[0][core:2]
+[node-18:2072448] Rank 9 bound to package[0][core:1]
+[node-18:2072448] Rank 11 bound to package[0][core:3]
+[node-18:2072448] Rank 12 bound to package[0][core:4]
+[node-18:2072448] Rank 13 bound to package[0][core:5]
+[node-18:2072448] Rank 14 bound to package[0][core:6]
+[node-18:2072448] Rank 15 bound to package[0][core:7]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.664291
+COMM_TIME_SEC:      0.056554
+COMP_TIME_SEC:      0.607737
+COMM_FRACTION:      8.51%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 2/3 --
+[node-06:1523433] Rank 0 bound to package[0][core:0]
+[node-06:1523433] Rank 1 bound to package[0][core:1]
+[node-06:1523433] Rank 2 bound to package[0][core:2]
+[node-06:1523433] Rank 3 bound to package[0][core:3]
+[node-06:1523433] Rank 4 bound to package[0][core:4]
+[node-06:1523433] Rank 5 bound to package[0][core:5]
+[node-06:1523433] Rank 6 bound to package[0][core:6]
+[node-06:1523433] Rank 7 bound to package[0][core:7]
+[node-18:2072510] Rank 8 bound to package[0][core:0]
+[node-18:2072510] Rank 9 bound to package[0][core:1]
+[node-18:2072510] Rank 10 bound to package[0][core:2]
+[node-18:2072510] Rank 12 bound to package[0][core:4]
+[node-18:2072510] Rank 11 bound to package[0][core:3]
+[node-18:2072510] Rank 13 bound to package[0][core:5]
+[node-18:2072510] Rank 14 bound to package[0][core:6]
+[node-18:2072510] Rank 15 bound to package[0][core:7]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.664438
+COMM_TIME_SEC:      0.053075
+COMP_TIME_SEC:      0.611363
+COMM_FRACTION:      7.99%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 3/3 --
+[node-06:1523472] Rank 0 bound to package[0][core:0]
+[node-06:1523472] Rank 1 bound to package[0][core:1]
+[node-06:1523472] Rank 2 bound to package[0][core:2]
+[node-06:1523472] Rank 3 bound to package[0][core:3]
+[node-06:1523472] Rank 4 bound to package[0][core:4]
+[node-06:1523472] Rank 5 bound to package[0][core:5]
+[node-06:1523472] Rank 6 bound to package[0][core:6]
+[node-06:1523472] Rank 7 bound to package[0][core:7]
+[node-18:2072572] Rank 8 bound to package[0][core:0]
+[node-18:2072572] Rank 10 bound to package[0][core:2]
+[node-18:2072572] Rank 9 bound to package[0][core:1]
+[node-18:2072572] Rank 11 bound to package[0][core:3]
+[node-18:2072572] Rank 12 bound to package[0][core:4]
+[node-18:2072572] Rank 13 bound to package[0][core:5]
+[node-18:2072572] Rank 14 bound to package[0][core:6]
+[node-18:2072572] Rank 15 bound to package[0][core:7]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.667397
+COMM_TIME_SEC:      0.058693
+COMP_TIME_SEC:      0.608704
+COMM_FRACTION:      8.79%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+=== MPI MPI_2D np=16 ===
+-- run 1/3 --
+[node-06:1523514] Rank 0 bound to package[0][core:0]
+[node-06:1523514] Rank 1 bound to package[0][core:1]
+[node-06:1523514] Rank 2 bound to package[0][core:2]
+[node-06:1523514] Rank 3 bound to package[0][core:3]
+[node-06:1523514] Rank 4 bound to package[0][core:4]
+[node-06:1523514] Rank 5 bound to package[0][core:5]
+[node-06:1523514] Rank 6 bound to package[0][core:6]
+[node-06:1523514] Rank 7 bound to package[0][core:7]
+[node-18:2072634] Rank 8 bound to package[0][core:0]
+[node-18:2072634] Rank 10 bound to package[0][core:2]
+[node-18:2072634] Rank 9 bound to package[0][core:1]
+[node-18:2072634] Rank 11 bound to package[0][core:3]
+[node-18:2072634] Rank 13 bound to package[0][core:5]
+[node-18:2072634] Rank 12 bound to package[0][core:4]
+[node-18:2072634] Rank 14 bound to package[0][core:6]
+[node-18:2072634] Rank 15 bound to package[0][core:7]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+periods(1)=F
+periods(2)=F
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.655822
+COMM_TIME_SEC:      0.048840
+COMP_TIME_SEC:      0.606981
+COMM_FRACTION:      7.45%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 2/3 --
+[node-06:1523553] Rank 0 bound to package[0][core:0]
+[node-06:1523553] Rank 1 bound to package[0][core:1]
+[node-06:1523553] Rank 2 bound to package[0][core:2]
+[node-06:1523553] Rank 3 bound to package[0][core:3]
+[node-06:1523553] Rank 4 bound to package[0][core:4]
+[node-06:1523553] Rank 5 bound to package[0][core:5]
+[node-06:1523553] Rank 6 bound to package[0][core:6]
+[node-06:1523553] Rank 7 bound to package[0][core:7]
+[node-18:2072696] Rank 8 bound to package[0][core:0]
+[node-18:2072696] Rank 9 bound to package[0][core:1]
+[node-18:2072696] Rank 10 bound to package[0][core:2]
+[node-18:2072696] Rank 11 bound to package[0][core:3]
+[node-18:2072696] Rank 12 bound to package[0][core:4]
+[node-18:2072696] Rank 14 bound to package[0][core:6]
+[node-18:2072696] Rank 13 bound to package[0][core:5]
+[node-18:2072696] Rank 15 bound to package[0][core:7]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+periods(1)=F
+periods(2)=F
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.655235
+COMM_TIME_SEC:      0.050150
+COMP_TIME_SEC:      0.605085
+COMM_FRACTION:      7.65%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 3/3 --
+[node-06:1523656] Rank 0 bound to package[0][core:0]
+[node-06:1523656] Rank 1 bound to package[0][core:1]
+[node-06:1523656] Rank 2 bound to package[0][core:2]
+[node-06:1523656] Rank 3 bound to package[0][core:3]
+[node-06:1523656] Rank 4 bound to package[0][core:4]
+[node-06:1523656] Rank 5 bound to package[0][core:5]
+[node-06:1523656] Rank 6 bound to package[0][core:6]
+[node-06:1523656] Rank 7 bound to package[0][core:7]
+[node-18:2072811] Rank 9 bound to package[0][core:1]
+[node-18:2072811] Rank 10 bound to package[0][core:2]
+[node-18:2072811] Rank 8 bound to package[0][core:0]
+[node-18:2072811] Rank 11 bound to package[0][core:3]
+[node-18:2072811] Rank 12 bound to package[0][core:4]
+[node-18:2072811] Rank 13 bound to package[0][core:5]
+[node-18:2072811] Rank 14 bound to package[0][core:6]
+[node-18:2072811] Rank 15 bound to package[0][core:7]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+periods(1)=F
+periods(2)=F
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.656040
+COMM_TIME_SEC:      0.050632
+COMP_TIME_SEC:      0.605407
+COMM_FRACTION:      7.72%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+=== MPI ROW np=32 ===
+-- run 1/3 --
+[node-06:1523698] Rank 0 bound to package[0][core:0]
+[node-06:1523698] Rank 1 bound to package[0][core:1]
+[node-06:1523698] Rank 2 bound to package[0][core:2]
+[node-06:1523698] Rank 3 bound to package[0][core:3]
+[node-06:1523698] Rank 4 bound to package[0][core:4]
+[node-06:1523698] Rank 5 bound to package[0][core:5]
+[node-06:1523698] Rank 6 bound to package[0][core:6]
+[node-06:1523698] Rank 7 bound to package[0][core:7]
+[node-18:2072874] Rank 9 bound to package[0][core:1]
+[node-18:2072874] Rank 10 bound to package[0][core:2]
+[node-18:2072874] Rank 11 bound to package[0][core:3]
+[node-18:2072874] Rank 12 bound to package[0][core:4]
+[node-18:2072874] Rank 8 bound to package[0][core:0]
+[node-18:2072874] Rank 14 bound to package[0][core:6]
+[node-18:2072874] Rank 13 bound to package[0][core:5]
+[node-18:2072874] Rank 15 bound to package[0][core:7]
+[node-18:2072874] Rank 16 bound to package[0][core:8]
+[node-18:2072874] Rank 17 bound to package[0][core:9]
+[node-18:2072874] Rank 18 bound to package[0][core:10]
+[node-18:2072874] Rank 19 bound to package[0][core:11]
+[node-18:2072874] Rank 20 bound to package[1][core:12]
+[node-18:2072874] Rank 21 bound to package[1][core:13]
+[node-18:2072874] Rank 22 bound to package[1][core:14]
+[node-18:2072874] Rank 23 bound to package[1][core:15]
+[node-18:2072874] Rank 26 bound to package[1][core:18]
+[node-18:2072874] Rank 24 bound to package[1][core:16]
+[node-18:2072874] Rank 25 bound to package[1][core:17]
+[node-18:2072874] Rank 27 bound to package[1][core:19]
+[node-18:2072874] Rank 28 bound to package[1][core:20]
+[node-18:2072874] Rank 29 bound to package[1][core:21]
+[node-18:2072874] Rank 31 bound to package[1][core:23]
+[node-18:2072874] Rank 30 bound to package[1][core:22]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.592795
+COMM_TIME_SEC:      0.075958
+COMP_TIME_SEC:      0.516837
+COMM_FRACTION:     12.81%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+
+-- run 2/3 --
+[node-06:1523737] Rank 0 bound to package[0][core:0]
+[node-06:1523737] Rank 1 bound to package[0][core:1]
+[node-06:1523737] Rank 2 bound to package[0][core:2]
+[node-06:1523737] Rank 3 bound to package[0][core:3]
+[node-06:1523737] Rank 4 bound to package[0][core:4]
+[node-06:1523737] Rank 5 bound to package[0][core:5]
+[node-06:1523737] Rank 6 bound to package[0][core:6]
+[node-06:1523737] Rank 7 bound to package[0][core:7]
+[node-18:2072984] Rank 8 bound to package[0][core:0]
+[node-18:2072984] Rank 9 bound to package[0][core:1]
+[node-18:2072984] Rank 10 bound to package[0][core:2]
+[node-18:2072984] Rank 11 bound to package[0][core:3]
+[node-18:2072984] Rank 12 bound to package[0][core:4]
+[node-18:2072984] Rank 13 bound to package[0][core:5]
+[node-18:2072984] Rank 14 bound to package[0][core:6]
+[node-18:2072984] Rank 15 bound to package[0][core:7]
+[node-18:2072984] Rank 16 bound to package[0][core:8]
+[node-18:2072984] Rank 18 bound to package[0][core:10]
+[node-18:2072984] Rank 17 bound to package[0][core:9]
+[node-18:2072984] Rank 19 bound to package[0][core:11]
+[node-18:2072984] Rank 20 bound to package[1][core:12]
+[node-18:2072984] Rank 21 bound to package[1][core:13]
+[node-18:2072984] Rank 22 bound to package[1][core:14]
+[node-18:2072984] Rank 23 bound to package[1][core:15]
+[node-18:2072984] Rank 27 bound to package[1][core:19]
+[node-18:2072984] Rank 26 bound to package[1][core:18]
+[node-18:2072984] Rank 24 bound to package[1][core:16]
+[node-18:2072984] Rank 25 bound to package[1][core:17]
+[node-18:2072984] Rank 29 bound to package[1][core:21]
+[node-18:2072984] Rank 28 bound to package[1][core:20]
+[node-18:2072984] Rank 30 bound to package[1][core:22]
+[node-18:2072984] Rank 31 bound to package[1][core:23]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.597208
+COMM_TIME_SEC:      0.081072
+COMP_TIME_SEC:      0.516136
+COMM_FRACTION:     13.58%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+
+-- run 3/3 --
+[node-06:1523776] Rank 0 bound to package[0][core:0]
+[node-06:1523776] Rank 1 bound to package[0][core:1]
+[node-06:1523776] Rank 2 bound to package[0][core:2]
+[node-06:1523776] Rank 3 bound to package[0][core:3]
+[node-06:1523776] Rank 4 bound to package[0][core:4]
+[node-06:1523776] Rank 5 bound to package[0][core:5]
+[node-06:1523776] Rank 6 bound to package[0][core:6]
+[node-06:1523776] Rank 7 bound to package[0][core:7]
+[node-18:2073094] Rank 8 bound to package[0][core:0]
+[node-18:2073094] Rank 9 bound to package[0][core:1]
+[node-18:2073094] Rank 10 bound to package[0][core:2]
+[node-18:2073094] Rank 12 bound to package[0][core:4]
+[node-18:2073094] Rank 11 bound to package[0][core:3]
+[node-18:2073094] Rank 13 bound to package[0][core:5]
+[node-18:2073094] Rank 14 bound to package[0][core:6]
+[node-18:2073094] Rank 15 bound to package[0][core:7]
+[node-18:2073094] Rank 16 bound to package[0][core:8]
+[node-18:2073094] Rank 17 bound to package[0][core:9]
+[node-18:2073094] Rank 18 bound to package[0][core:10]
+[node-18:2073094] Rank 19 bound to package[0][core:11]
+[node-18:2073094] Rank 20 bound to package[1][core:12]
+[node-18:2073094] Rank 21 bound to package[1][core:13]
+[node-18:2073094] Rank 22 bound to package[1][core:14]
+[node-18:2073094] Rank 23 bound to package[1][core:15]
+[node-18:2073094] Rank 24 bound to package[1][core:16]
+[node-18:2073094] Rank 25 bound to package[1][core:17]
+[node-18:2073094] Rank 26 bound to package[1][core:18]
+[node-18:2073094] Rank 27 bound to package[1][core:19]
+[node-18:2073094] Rank 29 bound to package[1][core:21]
+[node-18:2073094] Rank 28 bound to package[1][core:20]
+[node-18:2073094] Rank 31 bound to package[1][core:23]
+[node-18:2073094] Rank 30 bound to package[1][core:22]
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.588369
+COMM_TIME_SEC:      0.071281
+COMP_TIME_SEC:      0.517088
+COMM_FRACTION:     12.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+
+=== MPI COLUMN np=32 ===
+-- run 1/3 --
+[node-06:1523820] Rank 0 bound to package[0][core:0]
+[node-06:1523820] Rank 1 bound to package[0][core:1]
+[node-06:1523820] Rank 2 bound to package[0][core:2]
+[node-06:1523820] Rank 3 bound to package[0][core:3]
+[node-06:1523820] Rank 4 bound to package[0][core:4]
+[node-06:1523820] Rank 5 bound to package[0][core:5]
+[node-06:1523820] Rank 6 bound to package[0][core:6]
+[node-06:1523820] Rank 7 bound to package[0][core:7]
+[node-18:2073211] Rank 8 bound to package[0][core:0]
+[node-18:2073211] Rank 9 bound to package[0][core:1]
+[node-18:2073211] Rank 10 bound to package[0][core:2]
+[node-18:2073211] Rank 13 bound to package[0][core:5]
+[node-18:2073211] Rank 17 bound to package[0][core:9]
+[node-18:2073211] Rank 11 bound to package[0][core:3]
+[node-18:2073211] Rank 14 bound to package[0][core:6]
+[node-18:2073211] Rank 16 bound to package[0][core:8]
+[node-18:2073211] Rank 15 bound to package[0][core:7]
+[node-18:2073211] Rank 12 bound to package[0][core:4]
+[node-18:2073211] Rank 18 bound to package[0][core:10]
+[node-18:2073211] Rank 19 bound to package[0][core:11]
+[node-18:2073211] Rank 20 bound to package[1][core:12]
+[node-18:2073211] Rank 21 bound to package[1][core:13]
+[node-18:2073211] Rank 22 bound to package[1][core:14]
+[node-18:2073211] Rank 26 bound to package[1][core:18]
+[node-18:2073211] Rank 25 bound to package[1][core:17]
+[node-18:2073211] Rank 23 bound to package[1][core:15]
+[node-18:2073211] Rank 24 bound to package[1][core:16]
+[node-18:2073211] Rank 27 bound to package[1][core:19]
+[node-18:2073211] Rank 28 bound to package[1][core:20]
+[node-18:2073211] Rank 29 bound to package[1][core:21]
+[node-18:2073211] Rank 31 bound to package[1][core:23]
+[node-18:2073211] Rank 30 bound to package[1][core:22]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.360433
+COMM_TIME_SEC:      0.043793
+COMP_TIME_SEC:      0.316640
+COMM_FRACTION:     12.15%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+
+-- run 2/3 --
+[node-06:1523864] Rank 0 bound to package[0][core:0]
+[node-06:1523864] Rank 1 bound to package[0][core:1]
+[node-06:1523864] Rank 2 bound to package[0][core:2]
+[node-06:1523864] Rank 3 bound to package[0][core:3]
+[node-06:1523864] Rank 4 bound to package[0][core:4]
+[node-06:1523864] Rank 5 bound to package[0][core:5]
+[node-06:1523864] Rank 6 bound to package[0][core:6]
+[node-06:1523864] Rank 7 bound to package[0][core:7]
+[node-18:2073321] Rank 8 bound to package[0][core:0]
+[node-18:2073321] Rank 9 bound to package[0][core:1]
+[node-18:2073321] Rank 10 bound to package[0][core:2]
+[node-18:2073321] Rank 11 bound to package[0][core:3]
+[node-18:2073321] Rank 12 bound to package[0][core:4]
+[node-18:2073321] Rank 13 bound to package[0][core:5]
+[node-18:2073321] Rank 15 bound to package[0][core:7]
+[node-18:2073321] Rank 14 bound to package[0][core:6]
+[node-18:2073321] Rank 16 bound to package[0][core:8]
+[node-18:2073321] Rank 18 bound to package[0][core:10]
+[node-18:2073321] Rank 17 bound to package[0][core:9]
+[node-18:2073321] Rank 19 bound to package[0][core:11]
+[node-18:2073321] Rank 20 bound to package[1][core:12]
+[node-18:2073321] Rank 21 bound to package[1][core:13]
+[node-18:2073321] Rank 22 bound to package[1][core:14]
+[node-18:2073321] Rank 23 bound to package[1][core:15]
+[node-18:2073321] Rank 27 bound to package[1][core:19]
+[node-18:2073321] Rank 24 bound to package[1][core:16]
+[node-18:2073321] Rank 25 bound to package[1][core:17]
+[node-18:2073321] Rank 28 bound to package[1][core:20]
+[node-18:2073321] Rank 29 bound to package[1][core:21]
+[node-18:2073321] Rank 26 bound to package[1][core:18]
+[node-18:2073321] Rank 31 bound to package[1][core:23]
+[node-18:2073321] Rank 30 bound to package[1][core:22]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.359107
+COMM_TIME_SEC:      0.044375
+COMP_TIME_SEC:      0.314732
+COMM_FRACTION:     12.36%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+
+-- run 3/3 --
+[node-06:1523903] Rank 0 bound to package[0][core:0]
+[node-06:1523903] Rank 1 bound to package[0][core:1]
+[node-06:1523903] Rank 2 bound to package[0][core:2]
+[node-06:1523903] Rank 3 bound to package[0][core:3]
+[node-06:1523903] Rank 4 bound to package[0][core:4]
+[node-06:1523903] Rank 5 bound to package[0][core:5]
+[node-06:1523903] Rank 6 bound to package[0][core:6]
+[node-06:1523903] Rank 7 bound to package[0][core:7]
+[node-18:2073431] Rank 8 bound to package[0][core:0]
+[node-18:2073431] Rank 11 bound to package[0][core:3]
+[node-18:2073431] Rank 10 bound to package[0][core:2]
+[node-18:2073431] Rank 12 bound to package[0][core:4]
+[node-18:2073431] Rank 9 bound to package[0][core:1]
+[node-18:2073431] Rank 16 bound to package[0][core:8]
+[node-18:2073431] Rank 17 bound to package[0][core:9]
+[node-18:2073431] Rank 15 bound to package[0][core:7]
+[node-18:2073431] Rank 13 bound to package[0][core:5]
+[node-18:2073431] Rank 14 bound to package[0][core:6]
+[node-18:2073431] Rank 18 bound to package[0][core:10]
+[node-18:2073431] Rank 19 bound to package[0][core:11]
+[node-18:2073431] Rank 20 bound to package[1][core:12]
+[node-18:2073431] Rank 21 bound to package[1][core:13]
+[node-18:2073431] Rank 22 bound to package[1][core:14]
+[node-18:2073431] Rank 23 bound to package[1][core:15]
+[node-18:2073431] Rank 24 bound to package[1][core:16]
+[node-18:2073431] Rank 26 bound to package[1][core:18]
+[node-18:2073431] Rank 25 bound to package[1][core:17]
+[node-18:2073431] Rank 27 bound to package[1][core:19]
+[node-18:2073431] Rank 28 bound to package[1][core:20]
+[node-18:2073431] Rank 29 bound to package[1][core:21]
+[node-18:2073431] Rank 31 bound to package[1][core:23]
+[node-18:2073431] Rank 30 bound to package[1][core:22]
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.360286
+COMM_TIME_SEC:      0.046854
+COMP_TIME_SEC:      0.313433
+COMM_FRACTION:     13.00%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+
+=== MPI MPI_BLOCK np=32 ===
+-- run 1/3 --
+[node-06:1523945] Rank 0 bound to package[0][core:0]
+[node-06:1523945] Rank 1 bound to package[0][core:1]
+[node-06:1523945] Rank 2 bound to package[0][core:2]
+[node-06:1523945] Rank 3 bound to package[0][core:3]
+[node-06:1523945] Rank 4 bound to package[0][core:4]
+[node-06:1523945] Rank 5 bound to package[0][core:5]
+[node-06:1523945] Rank 6 bound to package[0][core:6]
+[node-06:1523945] Rank 7 bound to package[0][core:7]
+[node-18:2073541] Rank 9 bound to package[0][core:1]
+[node-18:2073541] Rank 8 bound to package[0][core:0]
+[node-18:2073541] Rank 10 bound to package[0][core:2]
+[node-18:2073541] Rank 11 bound to package[0][core:3]
+[node-18:2073541] Rank 12 bound to package[0][core:4]
+[node-18:2073541] Rank 14 bound to package[0][core:6]
+[node-18:2073541] Rank 15 bound to package[0][core:7]
+[node-18:2073541] Rank 13 bound to package[0][core:5]
+[node-18:2073541] Rank 16 bound to package[0][core:8]
+[node-18:2073541] Rank 17 bound to package[0][core:9]
+[node-18:2073541] Rank 18 bound to package[0][core:10]
+[node-18:2073541] Rank 19 bound to package[0][core:11]
+[node-18:2073541] Rank 20 bound to package[1][core:12]
+[node-18:2073541] Rank 21 bound to package[1][core:13]
+[node-18:2073541] Rank 22 bound to package[1][core:14]
+[node-18:2073541] Rank 23 bound to package[1][core:15]
+[node-18:2073541] Rank 25 bound to package[1][core:17]
+[node-18:2073541] Rank 24 bound to package[1][core:16]
+[node-18:2073541] Rank 26 bound to package[1][core:18]
+[node-18:2073541] Rank 27 bound to package[1][core:19]
+[node-18:2073541] Rank 28 bound to package[1][core:20]
+[node-18:2073541] Rank 29 bound to package[1][core:21]
+[node-18:2073541] Rank 31 bound to package[1][core:23]
+[node-18:2073541] Rank 30 bound to package[1][core:22]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 8 x 4
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.350779
+COMM_TIME_SEC:      0.043092
+COMP_TIME_SEC:      0.307687
+COMM_FRACTION:     12.28%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+
+-- run 2/3 --
+[node-06:1523984] Rank 0 bound to package[0][core:0]
+[node-06:1523984] Rank 1 bound to package[0][core:1]
+[node-06:1523984] Rank 2 bound to package[0][core:2]
+[node-06:1523984] Rank 3 bound to package[0][core:3]
+[node-06:1523984] Rank 4 bound to package[0][core:4]
+[node-06:1523984] Rank 5 bound to package[0][core:5]
+[node-06:1523984] Rank 6 bound to package[0][core:6]
+[node-06:1523984] Rank 7 bound to package[0][core:7]
+[node-18:2073651] Rank 8 bound to package[0][core:0]
+[node-18:2073651] Rank 10 bound to package[0][core:2]
+[node-18:2073651] Rank 9 bound to package[0][core:1]
+[node-18:2073651] Rank 11 bound to package[0][core:3]
+[node-18:2073651] Rank 12 bound to package[0][core:4]
+[node-18:2073651] Rank 13 bound to package[0][core:5]
+[node-18:2073651] Rank 14 bound to package[0][core:6]
+[node-18:2073651] Rank 16 bound to package[0][core:8]
+[node-18:2073651] Rank 17 bound to package[0][core:9]
+[node-18:2073651] Rank 15 bound to package[0][core:7]
+[node-18:2073651] Rank 18 bound to package[0][core:10]
+[node-18:2073651] Rank 20 bound to package[1][core:12]
+[node-18:2073651] Rank 19 bound to package[0][core:11]
+[node-18:2073651] Rank 22 bound to package[1][core:14]
+[node-18:2073651] Rank 23 bound to package[1][core:15]
+[node-18:2073651] Rank 24 bound to package[1][core:16]
+[node-18:2073651] Rank 21 bound to package[1][core:13]
+[node-18:2073651] Rank 25 bound to package[1][core:17]
+[node-18:2073651] Rank 26 bound to package[1][core:18]
+[node-18:2073651] Rank 27 bound to package[1][core:19]
+[node-18:2073651] Rank 28 bound to package[1][core:20]
+[node-18:2073651] Rank 29 bound to package[1][core:21]
+[node-18:2073651] Rank 31 bound to package[1][core:23]
+[node-18:2073651] Rank 30 bound to package[1][core:22]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 8 x 4
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.350186
+COMM_TIME_SEC:      0.043164
+COMP_TIME_SEC:      0.307022
+COMM_FRACTION:     12.33%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+
+-- run 3/3 --
+[node-06:1524023] Rank 0 bound to package[0][core:0]
+[node-06:1524023] Rank 1 bound to package[0][core:1]
+[node-06:1524023] Rank 2 bound to package[0][core:2]
+[node-06:1524023] Rank 3 bound to package[0][core:3]
+[node-06:1524023] Rank 4 bound to package[0][core:4]
+[node-06:1524023] Rank 5 bound to package[0][core:5]
+[node-06:1524023] Rank 6 bound to package[0][core:6]
+[node-06:1524023] Rank 7 bound to package[0][core:7]
+[node-18:2073761] Rank 8 bound to package[0][core:0]
+[node-18:2073761] Rank 9 bound to package[0][core:1]
+[node-18:2073761] Rank 10 bound to package[0][core:2]
+[node-18:2073761] Rank 11 bound to package[0][core:3]
+[node-18:2073761] Rank 12 bound to package[0][core:4]
+[node-18:2073761] Rank 13 bound to package[0][core:5]
+[node-18:2073761] Rank 15 bound to package[0][core:7]
+[node-18:2073761] Rank 14 bound to package[0][core:6]
+[node-18:2073761] Rank 16 bound to package[0][core:8]
+[node-18:2073761] Rank 18 bound to package[0][core:10]
+[node-18:2073761] Rank 17 bound to package[0][core:9]
+[node-18:2073761] Rank 19 bound to package[0][core:11]
+[node-18:2073761] Rank 20 bound to package[1][core:12]
+[node-18:2073761] Rank 21 bound to package[1][core:13]
+[node-18:2073761] Rank 22 bound to package[1][core:14]
+[node-18:2073761] Rank 23 bound to package[1][core:15]
+[node-18:2073761] Rank 24 bound to package[1][core:16]
+[node-18:2073761] Rank 25 bound to package[1][core:17]
+[node-18:2073761] Rank 26 bound to package[1][core:18]
+[node-18:2073761] Rank 27 bound to package[1][core:19]
+[node-18:2073761] Rank 28 bound to package[1][core:20]
+[node-18:2073761] Rank 29 bound to package[1][core:21]
+[node-18:2073761] Rank 30 bound to package[1][core:22]
+[node-18:2073761] Rank 31 bound to package[1][core:23]
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 8 x 4
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.350422
+COMM_TIME_SEC:      0.041038
+COMP_TIME_SEC:      0.309384
+COMM_FRACTION:     11.71%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+
+=== MPI MPI_2D np=32 ===
+-- run 1/3 --
+[node-06:1524065] Rank 0 bound to package[0][core:0]
+[node-06:1524065] Rank 1 bound to package[0][core:1]
+[node-06:1524065] Rank 2 bound to package[0][core:2]
+[node-06:1524065] Rank 3 bound to package[0][core:3]
+[node-06:1524065] Rank 4 bound to package[0][core:4]
+[node-06:1524065] Rank 5 bound to package[0][core:5]
+[node-06:1524065] Rank 6 bound to package[0][core:6]
+[node-06:1524065] Rank 7 bound to package[0][core:7]
+[node-18:2073871] Rank 8 bound to package[0][core:0]
+[node-18:2073871] Rank 9 bound to package[0][core:1]
+[node-18:2073871] Rank 10 bound to package[0][core:2]
+[node-18:2073871] Rank 11 bound to package[0][core:3]
+[node-18:2073871] Rank 12 bound to package[0][core:4]
+[node-18:2073871] Rank 13 bound to package[0][core:5]
+[node-18:2073871] Rank 16 bound to package[0][core:8]
+[node-18:2073871] Rank 14 bound to package[0][core:6]
+[node-18:2073871] Rank 15 bound to package[0][core:7]
+[node-18:2073871] Rank 17 bound to package[0][core:9]
+[node-18:2073871] Rank 18 bound to package[0][core:10]
+[node-18:2073871] Rank 19 bound to package[0][core:11]
+[node-18:2073871] Rank 20 bound to package[1][core:12]
+[node-18:2073871] Rank 22 bound to package[1][core:14]
+[node-18:2073871] Rank 21 bound to package[1][core:13]
+[node-18:2073871] Rank 23 bound to package[1][core:15]
+[node-18:2073871] Rank 24 bound to package[1][core:16]
+[node-18:2073871] Rank 25 bound to package[1][core:17]
+[node-18:2073871] Rank 26 bound to package[1][core:18]
+[node-18:2073871] Rank 28 bound to package[1][core:20]
+[node-18:2073871] Rank 27 bound to package[1][core:19]
+[node-18:2073871] Rank 29 bound to package[1][core:21]
+[node-18:2073871] Rank 30 bound to package[1][core:22]
+[node-18:2073871] Rank 31 bound to package[1][core:23]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 8 x 4
+periods(1)=F
+periods(2)=F
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.352465
+COMM_TIME_SEC:      0.042701
+COMP_TIME_SEC:      0.309765
+COMM_FRACTION:     12.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+
+-- run 2/3 --
+[node-06:1524106] Rank 0 bound to package[0][core:0]
+[node-06:1524106] Rank 1 bound to package[0][core:1]
+[node-06:1524106] Rank 2 bound to package[0][core:2]
+[node-06:1524106] Rank 3 bound to package[0][core:3]
+[node-06:1524106] Rank 4 bound to package[0][core:4]
+[node-06:1524106] Rank 5 bound to package[0][core:5]
+[node-06:1524106] Rank 6 bound to package[0][core:6]
+[node-06:1524106] Rank 7 bound to package[0][core:7]
+[node-18:2073981] Rank 9 bound to package[0][core:1]
+[node-18:2073981] Rank 10 bound to package[0][core:2]
+[node-18:2073981] Rank 8 bound to package[0][core:0]
+[node-18:2073981] Rank 11 bound to package[0][core:3]
+[node-18:2073981] Rank 13 bound to package[0][core:5]
+[node-18:2073981] Rank 12 bound to package[0][core:4]
+[node-18:2073981] Rank 14 bound to package[0][core:6]
+[node-18:2073981] Rank 15 bound to package[0][core:7]
+[node-18:2073981] Rank 16 bound to package[0][core:8]
+[node-18:2073981] Rank 17 bound to package[0][core:9]
+[node-18:2073981] Rank 18 bound to package[0][core:10]
+[node-18:2073981] Rank 19 bound to package[0][core:11]
+[node-18:2073981] Rank 20 bound to package[1][core:12]
+[node-18:2073981] Rank 21 bound to package[1][core:13]
+[node-18:2073981] Rank 22 bound to package[1][core:14]
+[node-18:2073981] Rank 23 bound to package[1][core:15]
+[node-18:2073981] Rank 24 bound to package[1][core:16]
+[node-18:2073981] Rank 25 bound to package[1][core:17]
+[node-18:2073981] Rank 26 bound to package[1][core:18]
+[node-18:2073981] Rank 27 bound to package[1][core:19]
+[node-18:2073981] Rank 29 bound to package[1][core:21]
+[node-18:2073981] Rank 30 bound to package[1][core:22]
+[node-18:2073981] Rank 28 bound to package[1][core:20]
+[node-18:2073981] Rank 31 bound to package[1][core:23]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 8 x 4
+periods(1)=F
+periods(2)=F
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.348466
+COMM_TIME_SEC:      0.041982
+COMP_TIME_SEC:      0.306485
+COMM_FRACTION:     12.05%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+
+-- run 3/3 --
+[node-06:1524145] Rank 0 bound to package[0][core:0]
+[node-06:1524145] Rank 1 bound to package[0][core:1]
+[node-06:1524145] Rank 2 bound to package[0][core:2]
+[node-06:1524145] Rank 3 bound to package[0][core:3]
+[node-06:1524145] Rank 4 bound to package[0][core:4]
+[node-06:1524145] Rank 5 bound to package[0][core:5]
+[node-06:1524145] Rank 6 bound to package[0][core:6]
+[node-06:1524145] Rank 7 bound to package[0][core:7]
+[node-18:2074091] Rank 8 bound to package[0][core:0]
+[node-18:2074091] Rank 10 bound to package[0][core:2]
+[node-18:2074091] Rank 9 bound to package[0][core:1]
+[node-18:2074091] Rank 12 bound to package[0][core:4]
+[node-18:2074091] Rank 13 bound to package[0][core:5]
+[node-18:2074091] Rank 11 bound to package[0][core:3]
+[node-18:2074091] Rank 14 bound to package[0][core:6]
+[node-18:2074091] Rank 15 bound to package[0][core:7]
+[node-18:2074091] Rank 16 bound to package[0][core:8]
+[node-18:2074091] Rank 17 bound to package[0][core:9]
+[node-18:2074091] Rank 18 bound to package[0][core:10]
+[node-18:2074091] Rank 19 bound to package[0][core:11]
+[node-18:2074091] Rank 20 bound to package[1][core:12]
+[node-18:2074091] Rank 21 bound to package[1][core:13]
+[node-18:2074091] Rank 23 bound to package[1][core:15]
+[node-18:2074091] Rank 24 bound to package[1][core:16]
+[node-18:2074091] Rank 25 bound to package[1][core:17]
+[node-18:2074091] Rank 22 bound to package[1][core:14]
+[node-18:2074091] Rank 26 bound to package[1][core:18]
+[node-18:2074091] Rank 27 bound to package[1][core:19]
+[node-18:2074091] Rank 29 bound to package[1][core:21]
+[node-18:2074091] Rank 28 bound to package[1][core:20]
+[node-18:2074091] Rank 30 bound to package[1][core:22]
+[node-18:2074091] Rank 31 bound to package[1][core:23]
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 8 x 4
+periods(1)=F
+periods(2)=F
+MPI Ranks: 32
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.348532
+COMM_TIME_SEC:      0.041322
+COMP_TIME_SEC:      0.307210
+COMM_FRACTION:     11.86%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      32
+========================================
+

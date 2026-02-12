@@ -1,0 +1,4 @@
+==========================================
+MPI Latency microbenchmark (np=2)
+==========================================
+WARNING: latency_results.txt not produced

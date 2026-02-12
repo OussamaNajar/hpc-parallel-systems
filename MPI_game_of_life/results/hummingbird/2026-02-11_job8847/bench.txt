@@ -1,0 +1,1212 @@
+============================================
+MPI Game of Life Benchmark Suite
+============================================
+run_id=2026-02-11_job8847
+platform=hummingbird
+date_is=2026-02-11T12:32:47-08:00
+mode=full
+grid=2048x2048 steps=300 reps=3
+launcher=mpirun
+NP_LIST=1 2 4 8 16
+============================================
+
+=== SERIAL BASELINE ===
+-- run 1/3 --
+==========================================
+Serial GoL: 2048x2048, Steps: 300
+==========================================
+
+========================================
+TOTAL_TIME_SEC:    12.121060
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+========================================
+
+-- run 2/3 --
+==========================================
+Serial GoL: 2048x2048, Steps: 300
+==========================================
+
+========================================
+TOTAL_TIME_SEC:    12.243137
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+========================================
+
+-- run 3/3 --
+==========================================
+Serial GoL: 2048x2048, Steps: 300
+==========================================
+
+========================================
+TOTAL_TIME_SEC:    12.101531
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+========================================
+
+=== MPI ROW np=1 ===
+-- run 1/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    13.637049
+COMM_TIME_SEC:      0.003243
+COMP_TIME_SEC:     13.633806
+COMM_FRACTION:      0.02%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    13.651989
+COMM_TIME_SEC:      0.003342
+COMP_TIME_SEC:     13.648647
+COMM_FRACTION:      0.02%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    13.626325
+COMM_TIME_SEC:      0.003294
+COMP_TIME_SEC:     13.623031
+COMM_FRACTION:      0.02%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI COLUMN np=1 ===
+-- run 1/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.058218
+COMM_TIME_SEC:      0.000341
+COMP_TIME_SEC:     12.057877
+COMM_FRACTION:      0.00%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    11.923690
+COMM_TIME_SEC:      0.000378
+COMP_TIME_SEC:     11.923312
+COMM_FRACTION:      0.00%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    11.955675
+COMM_TIME_SEC:      0.000348
+COMP_TIME_SEC:     11.955328
+COMM_FRACTION:      0.00%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI MPI_BLOCK np=1 ===
+-- run 1/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.039220
+COMM_TIME_SEC:      0.003381
+COMP_TIME_SEC:     12.035839
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    11.913424
+COMM_TIME_SEC:      0.003402
+COMP_TIME_SEC:     11.910022
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    12.054317
+COMM_TIME_SEC:      0.003325
+COMP_TIME_SEC:     12.050993
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI MPI_2D np=1 ===
+-- run 1/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    11.912022
+COMM_TIME_SEC:      0.003385
+COMP_TIME_SEC:     11.908637
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    11.902201
+COMM_TIME_SEC:      0.003457
+COMP_TIME_SEC:     11.898744
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 1 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:    11.935353
+COMM_TIME_SEC:      0.003441
+COMP_TIME_SEC:     11.931911
+COMM_FRACTION:      0.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI ROW np=2 ===
+-- run 1/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.997254
+COMM_TIME_SEC:      0.053396
+COMP_TIME_SEC:      6.943858
+COMM_FRACTION:      0.76%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 2/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.973056
+COMM_TIME_SEC:      0.014549
+COMP_TIME_SEC:      6.958507
+COMM_FRACTION:      0.21%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 3/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.960576
+COMM_TIME_SEC:      0.032972
+COMP_TIME_SEC:      6.927603
+COMM_FRACTION:      0.47%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+=== MPI COLUMN np=2 ===
+-- run 1/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     4.679696
+COMM_TIME_SEC:      0.087158
+COMP_TIME_SEC:      4.592539
+COMM_FRACTION:      1.86%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 2/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     4.567024
+COMM_TIME_SEC:      0.007041
+COMP_TIME_SEC:      4.559984
+COMM_FRACTION:      0.15%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 3/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     4.624812
+COMM_TIME_SEC:      0.068882
+COMP_TIME_SEC:      4.555930
+COMM_FRACTION:      1.49%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+=== MPI MPI_BLOCK np=2 ===
+-- run 1/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.454902
+COMM_TIME_SEC:      0.009826
+COMP_TIME_SEC:      6.445076
+COMM_FRACTION:      0.15%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 2/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.448424
+COMM_TIME_SEC:      0.139594
+COMP_TIME_SEC:      6.308830
+COMM_FRACTION:      2.16%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 3/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.439547
+COMM_TIME_SEC:      0.089600
+COMP_TIME_SEC:      6.349947
+COMM_FRACTION:      1.39%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+=== MPI MPI_2D np=2 ===
+-- run 1/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.406772
+COMM_TIME_SEC:      0.013855
+COMP_TIME_SEC:      6.392917
+COMM_FRACTION:      0.22%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 2/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.401526
+COMM_TIME_SEC:      0.150734
+COMP_TIME_SEC:      6.250791
+COMM_FRACTION:      2.35%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+-- run 3/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 1
+periods(1)=F
+periods(2)=F
+MPI Ranks: 2
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     6.420069
+COMM_TIME_SEC:      0.093465
+COMP_TIME_SEC:      6.326604
+COMM_FRACTION:      1.46%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      2
+========================================
+
+=== MPI ROW np=4 ===
+-- run 1/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     3.848757
+COMM_TIME_SEC:      0.054597
+COMP_TIME_SEC:      3.794161
+COMM_FRACTION:      1.42%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 2/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     3.848343
+COMM_TIME_SEC:      0.059508
+COMP_TIME_SEC:      3.788835
+COMM_FRACTION:      1.55%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 3/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     3.869329
+COMM_TIME_SEC:      0.019606
+COMP_TIME_SEC:      3.849723
+COMM_FRACTION:      0.51%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+=== MPI COLUMN np=4 ===
+-- run 1/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.492974
+COMM_TIME_SEC:      0.050372
+COMP_TIME_SEC:      2.442602
+COMM_FRACTION:      2.02%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 2/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.513639
+COMM_TIME_SEC:      0.036385
+COMP_TIME_SEC:      2.477254
+COMM_FRACTION:      1.45%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 3/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.487705
+COMM_TIME_SEC:      0.053163
+COMP_TIME_SEC:      2.434542
+COMM_FRACTION:      2.14%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+=== MPI MPI_BLOCK np=4 ===
+-- run 1/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.637693
+COMM_TIME_SEC:      0.056009
+COMP_TIME_SEC:      2.581684
+COMM_FRACTION:      2.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 2/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.623155
+COMM_TIME_SEC:      0.053305
+COMP_TIME_SEC:      2.569850
+COMM_FRACTION:      2.03%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 3/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.600185
+COMM_TIME_SEC:      0.050644
+COMP_TIME_SEC:      2.549541
+COMM_FRACTION:      1.95%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+=== MPI MPI_2D np=4 ===
+-- run 1/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.602993
+COMM_TIME_SEC:      0.050139
+COMP_TIME_SEC:      2.552855
+COMM_FRACTION:      1.93%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 2/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.600488
+COMM_TIME_SEC:      0.133644
+COMP_TIME_SEC:      2.466843
+COMM_FRACTION:      5.14%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+-- run 3/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 2 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 4
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.585830
+COMM_TIME_SEC:      0.044391
+COMP_TIME_SEC:      2.541439
+COMM_FRACTION:      1.72%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      4
+========================================
+
+=== MPI ROW np=8 ===
+-- run 1/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.018655
+COMM_TIME_SEC:      0.010689
+COMP_TIME_SEC:      2.007966
+COMM_FRACTION:      0.53%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 2/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.024315
+COMM_TIME_SEC:      0.046976
+COMP_TIME_SEC:      1.977339
+COMM_FRACTION:      2.32%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 3/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     2.021037
+COMM_TIME_SEC:      0.037661
+COMP_TIME_SEC:      1.983376
+COMM_FRACTION:      1.86%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+=== MPI COLUMN np=8 ===
+-- run 1/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.357452
+COMM_TIME_SEC:      0.031408
+COMP_TIME_SEC:      1.326045
+COMM_FRACTION:      2.31%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 2/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.374669
+COMM_TIME_SEC:      0.024310
+COMP_TIME_SEC:      1.350359
+COMM_FRACTION:      1.77%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 3/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.370221
+COMM_TIME_SEC:      0.028395
+COMP_TIME_SEC:      1.341826
+COMM_FRACTION:      2.07%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+=== MPI MPI_BLOCK np=8 ===
+-- run 1/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.400218
+COMM_TIME_SEC:      0.074062
+COMP_TIME_SEC:      1.326157
+COMM_FRACTION:      5.29%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 2/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.394317
+COMM_TIME_SEC:      0.084470
+COMP_TIME_SEC:      1.309848
+COMM_FRACTION:      6.06%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 3/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.411339
+COMM_TIME_SEC:      0.083398
+COMP_TIME_SEC:      1.327941
+COMM_FRACTION:      5.91%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+=== MPI MPI_2D np=8 ===
+-- run 1/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.374689
+COMM_TIME_SEC:      0.037598
+COMP_TIME_SEC:      1.337091
+COMM_FRACTION:      2.73%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 2/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.391665
+COMM_TIME_SEC:      0.079210
+COMP_TIME_SEC:      1.312455
+COMM_FRACTION:      5.69%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+-- run 3/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 2
+periods(1)=F
+periods(2)=F
+MPI Ranks: 8
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.359488
+COMM_TIME_SEC:      0.042296
+COMP_TIME_SEC:      1.317193
+COMM_FRACTION:      3.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      8
+========================================
+
+=== MPI ROW np=16 ===
+-- run 1/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.361530
+COMM_TIME_SEC:      0.008133
+COMP_TIME_SEC:      1.353397
+COMM_FRACTION:      0.60%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 2/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.368600
+COMM_TIME_SEC:      0.009821
+COMP_TIME_SEC:      1.358779
+COMM_FRACTION:      0.72%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 3/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     1.370485
+COMM_TIME_SEC:      0.009608
+COMP_TIME_SEC:      1.360877
+COMM_FRACTION:      0.70%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+=== MPI COLUMN np=16 ===
+-- run 1/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.688180
+COMM_TIME_SEC:      0.022688
+COMP_TIME_SEC:      0.665492
+COMM_FRACTION:      3.30%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 2/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.676542
+COMM_TIME_SEC:      0.045482
+COMP_TIME_SEC:      0.631061
+COMM_FRACTION:      6.72%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 3/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.686549
+COMM_TIME_SEC:      0.021295
+COMP_TIME_SEC:      0.665254
+COMM_FRACTION:      3.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+=== MPI MPI_BLOCK np=16 ===
+-- run 1/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.671215
+COMM_TIME_SEC:      0.040841
+COMP_TIME_SEC:      0.630374
+COMM_FRACTION:      6.08%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 2/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.665372
+COMM_TIME_SEC:      0.038689
+COMP_TIME_SEC:      0.626683
+COMM_FRACTION:      5.81%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 3/3 --
+==========================================
+MPI Block Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.669713
+COMM_TIME_SEC:      0.042926
+COMP_TIME_SEC:      0.626787
+COMM_FRACTION:      6.41%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+=== MPI MPI_2D np=16 ===
+-- run 1/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+periods(1)=F
+periods(2)=F
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.648563
+COMM_TIME_SEC:      0.027760
+COMP_TIME_SEC:      0.620802
+COMM_FRACTION:      4.28%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 2/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+periods(1)=F
+periods(2)=F
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.650406
+COMM_TIME_SEC:      0.024736
+COMP_TIME_SEC:      0.625670
+COMM_FRACTION:      3.80%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+
+-- run 3/3 --
+==========================================
+MPI 2D Decomposition: 2048x2048, Steps: 300
+Process grid: 4 x 4
+periods(1)=F
+periods(2)=F
+MPI Ranks: 16
+==========================================
+ALIVE_FINAL:    5
+CHECKSUM_FINAL: 386001545
+
+========================================
+TOTAL_TIME_SEC:     0.646814
+COMM_TIME_SEC:      0.023503
+COMP_TIME_SEC:      0.623311
+COMM_FRACTION:      3.63%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      16
+========================================
+

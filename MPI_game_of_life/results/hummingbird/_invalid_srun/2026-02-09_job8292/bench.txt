@@ -1,0 +1,1559 @@
+============================================
+MPI Game of Life Benchmark Suite
+============================================
+run_id=2026-02-09_job8292
+platform=hummingbird
+date_is=2026-02-09T23:21:59-08:00
+grid=2048x2048 steps=300 reps=3
+launcher=srun
+============================================
+
+=== SERIAL BASELINE ===
+-- run 1/3 --
+==========================================
+Serial GoL: 2048x2048, Steps: 300
+==========================================
+
+========================================
+TOTAL_TIME_SEC:    12.455548
+ALIVE_FINAL:    5
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+========================================
+
+-- run 2/3 --
+==========================================
+Serial GoL: 2048x2048, Steps: 300
+==========================================
+
+========================================
+TOTAL_TIME_SEC:    12.008205
+ALIVE_FINAL:    5
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+========================================
+
+-- run 3/3 --
+==========================================
+Serial GoL: 2048x2048, Steps: 300
+==========================================
+
+========================================
+TOTAL_TIME_SEC:    12.396290
+ALIVE_FINAL:    5
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+========================================
+
+=== MPI ROW np=1 ===
+[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 mnajar mnajar 31888 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/row
+-- run 1/3 --
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    12.068957
+COMM_TIME_SEC:      0.010485
+COMP_TIME_SEC:     12.058472
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    11.720137
+COMM_TIME_SEC:      0.010272
+COMP_TIME_SEC:     11.709864
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    12.106094
+COMM_TIME_SEC:      0.010366
+COMP_TIME_SEC:     12.095728
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI ROW np=2 ===
+[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 mnajar mnajar 31888 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/row
+-- run 1/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    11.635254
+COMM_TIME_SEC:      0.010018
+COMP_TIME_SEC:     11.625236
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    12.047782
+COMM_TIME_SEC:      0.010434
+COMP_TIME_SEC:     12.037348
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    11.623620
+COMM_TIME_SEC:      0.010186
+COMP_TIME_SEC:     11.613434
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    12.015504
+COMM_TIME_SEC:      0.010429
+COMP_TIME_SEC:     12.005075
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    11.599323
+COMM_TIME_SEC:      0.010231
+COMP_TIME_SEC:     11.589092
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    11.989235
+COMM_TIME_SEC:      0.010375
+COMP_TIME_SEC:     11.978860
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI ROW np=4 ===
+[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 mnajar mnajar 31888 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/row
+-- run 1/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+ALIVE_FINAL:    5
+
+========================================
+
+========================================
+TOTAL_TIME_SEC:    12.746195
+COMM_TIME_SEC:      0.011636
+COMP_TIME_SEC:     12.734559
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+TOTAL_TIME_SEC:    12.746145
+========================================
+COMM_TIME_SEC:      0.013429
+COMP_TIME_SEC:     12.732716
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.177152
+COMM_TIME_SEC:      0.011393
+COMP_TIME_SEC:     13.165758
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.198516
+COMM_TIME_SEC:      0.011581
+COMP_TIME_SEC:     13.186935
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    12.374809
+COMM_TIME_SEC:      0.011391
+COMP_TIME_SEC:     12.363418
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    12.381312
+COMM_TIME_SEC:      0.010734
+COMP_TIME_SEC:     12.370578
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.036682
+COMM_TIME_SEC:      0.011267
+COMP_TIME_SEC:     13.025415
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.064991
+COMM_TIME_SEC:      0.011716
+COMP_TIME_SEC:     13.053276
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    12.353754
+COMM_TIME_SEC:      0.011245
+COMP_TIME_SEC:     12.342509
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    12.378568
+COMM_TIME_SEC:      0.011355
+COMP_TIME_SEC:     12.367213
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.062337
+COMM_TIME_SEC:      0.011384
+COMP_TIME_SEC:     13.050952
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.084083
+COMM_TIME_SEC:      0.011372
+COMP_TIME_SEC:     13.072711
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI ROW np=8 ===
+[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 mnajar mnajar 31888 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/row
+-- run 1/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.582100
+COMM_TIME_SEC:      0.013388
+COMP_TIME_SEC:     13.568713
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.577122
+COMM_TIME_SEC:      0.013875
+COMP_TIME_SEC:     13.563247
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.581886
+COMM_TIME_SEC:      0.012599
+COMP_TIME_SEC:     13.569287
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.593588
+COMM_TIME_SEC:      0.012665
+COMP_TIME_SEC:     13.580923
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.131682
+COMM_TIME_SEC:      0.012893
+COMP_TIME_SEC:     14.118789
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.200871
+COMM_TIME_SEC:      0.014079
+COMP_TIME_SEC:     14.186792
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.221062
+COMM_TIME_SEC:      0.013234
+COMP_TIME_SEC:     14.207828
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.226136
+COMM_TIME_SEC:      0.013057
+COMP_TIME_SEC:     14.213079
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.653533
+COMM_TIME_SEC:      0.013570
+COMP_TIME_SEC:     13.639963
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.656906
+COMM_TIME_SEC:      0.015037
+COMP_TIME_SEC:     13.641868
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.653265
+COMM_TIME_SEC:      0.012658
+COMP_TIME_SEC:     13.640606
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.654461
+COMM_TIME_SEC:      0.012500
+COMP_TIME_SEC:     13.641962
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.210857
+COMM_TIME_SEC:      0.013145
+COMP_TIME_SEC:     14.197712
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.289877
+COMM_TIME_SEC:      0.013355
+COMP_TIME_SEC:     14.276522
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.351372
+COMM_TIME_SEC:      0.013097
+COMP_TIME_SEC:     14.338275
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.394350
+COMM_TIME_SEC:      0.013830
+COMP_TIME_SEC:     14.380520
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.579612
+COMM_TIME_SEC:      0.012728
+COMP_TIME_SEC:     13.566883
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.575810
+COMM_TIME_SEC:      0.012672
+COMP_TIME_SEC:     13.563137
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.606137
+COMM_TIME_SEC:      0.013340
+COMP_TIME_SEC:     13.592798
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    13.656313
+COMM_TIME_SEC:      0.013387
+COMP_TIME_SEC:     13.642926
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.324926
+COMM_TIME_SEC:      0.013369
+COMP_TIME_SEC:     14.311556
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.335121
+COMM_TIME_SEC:      0.012665
+COMP_TIME_SEC:     14.322456
+COMM_FRACTION:      0.09%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+========================================
+TOTAL_TIME_SEC:    14.329339
+COMM_TIME_SEC:      0.013617
+COMP_TIME_SEC:     14.315722
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.379542
+COMM_TIME_SEC:      0.014462
+COMP_TIME_SEC:     14.365080
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI ROW np=16 ===
+[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 mnajar mnajar 31888 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/row
+-- run 1/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.677985
+COMM_TIME_SEC:      0.016135
+COMP_TIME_SEC:     14.661850
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.014877
+COMM_TIME_SEC:      0.017271
+COMP_TIME_SEC:     14.997607
+COMM_FRACTION:      0.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.078468
+COMM_TIME_SEC:      0.016689
+COMP_TIME_SEC:     15.061779
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.099346
+COMM_TIME_SEC:      0.017995
+COMP_TIME_SEC:     15.081351
+COMM_FRACTION:      0.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.110488
+COMM_TIME_SEC:      0.016844
+COMP_TIME_SEC:     15.093644
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+========================================
+TOTAL_TIME_SEC:    15.115504
+COMM_TIME_SEC:      0.016969
+COMP_TIME_SEC:     15.098535
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.100456
+COMM_TIME_SEC:      0.016027
+COMP_TIME_SEC:     15.084430
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.175180
+COMM_TIME_SEC:      0.015993
+COMP_TIME_SEC:     15.159187
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.234304
+COMM_TIME_SEC:      0.017938
+COMP_TIME_SEC:     15.216366
+COMM_FRACTION:      0.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.300060
+COMM_TIME_SEC:      0.017039
+COMP_TIME_SEC:     15.283021
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.338627
+COMM_TIME_SEC:      0.019220
+COMP_TIME_SEC:     15.319407
+COMM_FRACTION:      0.13%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.329456
+COMM_TIME_SEC:      0.018032
+COMP_TIME_SEC:     15.311424
+COMM_FRACTION:      0.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.341622
+COMM_TIME_SEC:      0.017871
+COMP_TIME_SEC:     15.323750
+COMM_FRACTION:      0.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.360030
+COMM_TIME_SEC:      0.021322
+COMP_TIME_SEC:     15.338708
+COMM_FRACTION:      0.14%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.367153
+COMM_TIME_SEC:      0.016081
+COMP_TIME_SEC:     15.351072
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.400903
+COMM_TIME_SEC:      0.016240
+COMP_TIME_SEC:     15.384664
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.602888
+COMM_TIME_SEC:      0.015766
+COMP_TIME_SEC:     14.587122
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.679844
+COMM_TIME_SEC:      0.016066
+COMP_TIME_SEC:     14.663778
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.941863
+COMM_TIME_SEC:      0.017417
+COMP_TIME_SEC:     14.924446
+COMM_FRACTION:      0.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.194168
+COMM_TIME_SEC:      0.016340
+COMP_TIME_SEC:     15.177828
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.191458
+COMM_TIME_SEC:      0.016719
+COMP_TIME_SEC:     15.174739
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+ALIVE_FINAL:    5
+TOTAL_TIME_SEC:    15.186062
+COMM_TIME_SEC:      0.016793
+COMP_TIME_SEC:     15.169269
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+========================================
+TOTAL_TIME_SEC:    15.185891
+COMM_TIME_SEC:      0.016211
+COMP_TIME_SEC:     15.169680
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.215776
+COMM_TIME_SEC:      0.016814
+COMP_TIME_SEC:     15.198961
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.231492
+COMM_TIME_SEC:      0.016126
+COMP_TIME_SEC:     15.215366
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.241820
+COMM_TIME_SEC:      0.017150
+COMP_TIME_SEC:     15.224670
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.325489
+COMM_TIME_SEC:      0.015959
+COMP_TIME_SEC:     15.309530
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.359549
+COMM_TIME_SEC:      0.017577
+COMP_TIME_SEC:     15.341972
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.326356
+COMM_TIME_SEC:      0.017978
+COMP_TIME_SEC:     15.308377
+COMM_FRACTION:      0.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.400249
+COMM_TIME_SEC:      0.021028
+COMP_TIME_SEC:     15.379221
+COMM_FRACTION:      0.14%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+ALIVE_FINAL:    5
+
+========================================
+
+========================================
+TOTAL_TIME_SEC:    15.431537
+COMM_TIME_SEC:      0.016481
+COMP_TIME_SEC:     15.415056
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+TOTAL_TIME_SEC:    15.438974
+COMM_TIME_SEC:      0.018547
+COMP_TIME_SEC:     15.420427
+========================================
+COMM_FRACTION:      0.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Row Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.807430
+COMM_TIME_SEC:      0.015888
+COMP_TIME_SEC:     14.791542
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.868055
+COMM_TIME_SEC:      0.016047
+COMP_TIME_SEC:     14.852007
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    14.998635
+COMM_TIME_SEC:      0.015705
+COMP_TIME_SEC:     14.982929
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.004532
+COMM_TIME_SEC:      0.016978
+COMP_TIME_SEC:     14.987554
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.001757
+COMM_TIME_SEC:      0.016355
+COMP_TIME_SEC:     14.985402
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.151181
+COMM_TIME_SEC:      0.016034
+COMP_TIME_SEC:     15.135146
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.182356
+COMM_TIME_SEC:      0.016233
+COMP_TIME_SEC:     15.166122
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.174627
+COMM_TIME_SEC:      0.017871
+COMP_TIME_SEC:     15.156755
+COMM_FRACTION:      0.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.172532
+COMM_TIME_SEC:      0.016369
+COMP_TIME_SEC:     15.156163
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.189569
+COMM_TIME_SEC:      0.016111
+COMP_TIME_SEC:     15.173458
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.219430
+COMM_TIME_SEC:      0.017788
+COMP_TIME_SEC:     15.201643
+COMM_FRACTION:      0.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.225789
+COMM_TIME_SEC:      0.015693
+COMP_TIME_SEC:     15.210096
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.235523
+COMM_TIME_SEC:      0.017108
+COMP_TIME_SEC:     15.218415
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.408267
+COMM_TIME_SEC:      0.018115
+COMP_TIME_SEC:     15.390152
+COMM_FRACTION:      0.12%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+========================================
+TOTAL_TIME_SEC:    15.400930
+COMM_TIME_SEC:      0.016351
+COMP_TIME_SEC:     15.384580
+COMM_FRACTION:      0.11%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    15.449574
+COMM_TIME_SEC:      0.015787
+COMP_TIME_SEC:     15.433787
+COMM_FRACTION:      0.10%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI COLUMN np=1 ===
+[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 mnajar mnajar 27664 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/column
+-- run 1/3 --
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    12.032621
+COMM_TIME_SEC:      0.002512
+COMP_TIME_SEC:     12.030109
+COMM_FRACTION:      0.02%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 2/3 --
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    11.722984
+COMM_TIME_SEC:      0.002278
+COMP_TIME_SEC:     11.720706
+COMM_FRACTION:      0.02%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+-- run 3/3 --
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+ALIVE_FINAL:    5
+
+========================================
+TOTAL_TIME_SEC:    12.045907
+COMM_TIME_SEC:      0.002580
+COMP_TIME_SEC:     12.043327
+COMM_FRACTION:      0.02%
+GRID_SIZE:      4194304
+TIMESTEPS:      300
+MPI_RANKS:      1
+========================================
+
+=== MPI COLUMN np=2 ===
+[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 mnajar mnajar 27664 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/column
+-- run 1/3 --
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================
+==========================================
+Column Decomposition: 2048x2048, Steps: 300
+MPI Ranks: 1
+==========================================

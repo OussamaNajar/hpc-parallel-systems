@@ -1,0 +1,14 @@
+==========================================
+Computation Time Microbenchmark Results
+Game of Life t_c Estimation
+==========================================
+
+Grid size: 20 x 20
+Iterations: 10000
+Total time:   0.0307 seconds
+
+t_c (per-cell update): 0.767050E-08 seconds
+t_c (per-op, model):   0.767050E-09 seconds
+
+Use in performance model:
+parameter :: t_c = 0.767050E-08
