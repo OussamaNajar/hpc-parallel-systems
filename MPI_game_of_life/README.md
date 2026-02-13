@@ -113,16 +113,7 @@ MPI_game_of_life/
   results/hummingbird/ Curated benchmark evidence
 ```
 
-## Cleanup Before Commit
-
-Remove generated binaries and raw local runs:
-
-```bash
-rm -rf bin/ experiments/
-```
-
-Keep this directory:
-- `results/hummingbird/_invalid_srun/`
+## NOTE
 
 The `_invalid_srun/` folder is intentionally preserved as a historical record of an earlier `srun` launch issue. It is not used for current benchmark claims or automated tests.
 
