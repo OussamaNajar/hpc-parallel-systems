@@ -46,8 +46,8 @@ TIMESTEPS:      300
 ========================================
 
 === MPI ROW np=1 ===
-[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
--rwxr-xr-x 1 mnajar mnajar 31888 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/row
+[bench] pwd=/home/user/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 user user 31888 Feb  9 23:21 /home/user/hpc-parallel-systems/MPI_game_of_life/bin/row
 -- run 1/3 --
 srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
 ==========================================
@@ -103,8 +103,8 @@ MPI_RANKS:      1
 ========================================
 
 === MPI ROW np=2 ===
-[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
--rwxr-xr-x 1 mnajar mnajar 31888 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/row
+[bench] pwd=/home/user/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 user user 31888 Feb  9 23:21 /home/user/hpc-parallel-systems/MPI_game_of_life/bin/row
 -- run 1/3 --
 ==========================================
 Row Decomposition: 2048x2048, Steps: 300
@@ -202,8 +202,8 @@ MPI_RANKS:      1
 ========================================
 
 === MPI ROW np=4 ===
-[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
--rwxr-xr-x 1 mnajar mnajar 31888 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/row
+[bench] pwd=/home/user/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 user user 31888 Feb  9 23:21 /home/user/hpc-parallel-systems/MPI_game_of_life/bin/row
 -- run 1/3 --
 ==========================================
 Row Decomposition: 2048x2048, Steps: 300
@@ -391,8 +391,8 @@ MPI_RANKS:      1
 ========================================
 
 === MPI ROW np=8 ===
-[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
--rwxr-xr-x 1 mnajar mnajar 31888 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/row
+[bench] pwd=/home/user/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 user user 31888 Feb  9 23:21 /home/user/hpc-parallel-systems/MPI_game_of_life/bin/row
 -- run 1/3 --
 ==========================================
 Row Decomposition: 2048x2048, Steps: 300
@@ -760,8 +760,8 @@ MPI_RANKS:      1
 ========================================
 
 === MPI ROW np=16 ===
-[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
--rwxr-xr-x 1 mnajar mnajar 31888 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/row
+[bench] pwd=/home/user/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 user user 31888 Feb  9 23:21 /home/user/hpc-parallel-systems/MPI_game_of_life/bin/row
 -- run 1/3 --
 ==========================================
 Row Decomposition: 2048x2048, Steps: 300
@@ -1489,8 +1489,8 @@ MPI_RANKS:      1
 ========================================
 
 === MPI COLUMN np=1 ===
-[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
--rwxr-xr-x 1 mnajar mnajar 27664 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/column
+[bench] pwd=/home/user/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 user user 27664 Feb  9 23:21 /home/user/hpc-parallel-systems/MPI_game_of_life/bin/column
 -- run 1/3 --
 srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
 ==========================================
@@ -1546,8 +1546,8 @@ MPI_RANKS:      1
 ========================================
 
 === MPI COLUMN np=2 ===
-[bench] pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
--rwxr-xr-x 1 mnajar mnajar 27664 Feb  9 23:21 /mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life/bin/column
+[bench] pwd=/home/user/hpc-parallel-systems/MPI_game_of_life
+-rwxr-xr-x 1 user user 27664 Feb  9 23:21 /home/user/hpc-parallel-systems/MPI_game_of_life/bin/column
 -- run 1/3 --
 ==========================================
 Column Decomposition: 2048x2048, Steps: 300

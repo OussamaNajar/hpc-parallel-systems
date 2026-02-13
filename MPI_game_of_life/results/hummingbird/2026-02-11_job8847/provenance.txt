@@ -1,7 +1,7 @@
 git_commit=unavailable
 hostname=node-12
 date_is=2026-02-11T12:32:47-08:00
-pwd=/home/mnajar/hpc-parallel-systems/MPI_game_of_life
+pwd=/home/user/hpc-parallel-systems/MPI_game_of_life
 launcher=mpirun
 USE_SRUN=0
 MPIRUN_BIN=mpirun

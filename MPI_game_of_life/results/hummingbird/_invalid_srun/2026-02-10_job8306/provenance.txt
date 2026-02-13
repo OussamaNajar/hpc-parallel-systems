@@ -1,7 +1,7 @@
 git_commit=unavailable
 hostname=node-09
 date_is=2026-02-10T00:15:49-08:00
-pwd=/mnt/beegfs/home/mnajar/hpc-parallel-systems/MPI_game_of_life
+pwd=/home/user/hpc-parallel-systems/MPI_game_of_life
 launcher=srun
 mpirun_path=/opt/ohpc/pub/mpi/openmpi5-gnu13/5.0.5/bin/mpirun
 mpirun_version=mpirun (Open MPI) 5.0.5
