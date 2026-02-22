@@ -2,7 +2,7 @@
 
 ## Canonical Run
 
-Job 8961 (2026-02-11): 34.85x speedup on 32 cores across 2 nodes.
+Job 8961 (2026-02-11): 34.9x speedup vs serial on 32 cores across 2 nodes (34.85x self-scaling).
 Evidence: `results/hummingbird/2026-02-11_job8961/`.
 
 ## Workload

@@ -23,10 +23,4 @@ export BIND_FLAGS="--bind-to core --map-by core --report-bindings"
 mpirun -np $np $BIND_FLAGS ./bin/mpi_2d ...
 ```
 
-## Valid Runs
 
-See parent directory for valid benchmark evidence:
-- `2026-02-11_job8961/` — 2-node, 32 ranks, 34.85x speedup
-- `2026-02-11_job8847/` — 1-node, 16 ranks, 18.3× speedup
-
-**Do not cite results from this directory.**

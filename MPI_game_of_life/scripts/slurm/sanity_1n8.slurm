@@ -25,7 +25,7 @@ export REPS=1
 export BENCH_PLATFORM=hummingbird
 export BENCH_TAG="sanity_job${SLURM_JOB_ID}"
 export MAX_NP="${SLURM_NTASKS}"
-export USE_SRUN=1
+export USE_SRUN=0
 
 bash scripts/build.sh
 bash scripts/bench.sh

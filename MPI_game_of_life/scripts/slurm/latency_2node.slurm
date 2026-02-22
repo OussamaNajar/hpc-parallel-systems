@@ -25,7 +25,7 @@ export BENCH_TAG="latency2_job${SLURM_JOB_ID}"
 export MAX_NP=2
 export NP_LIST=2
 export REPS=1
-export USE_SRUN=1
+export USE_SRUN=0
 export BENCH_MODE=latency
 
 bash scripts/bench.sh

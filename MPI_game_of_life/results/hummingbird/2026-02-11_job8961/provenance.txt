@@ -1,4 +1,3 @@
-git_commit=unavailable
 hostname=node-06
 date_is=2026-02-11T14:18:52-08:00
 pwd=/home/user/hpc-parallel-systems/MPI_game_of_life
